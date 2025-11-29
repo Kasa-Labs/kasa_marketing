@@ -51,7 +51,7 @@ export default function TermsPage() {
                   <p className="text-gray-700 mb-2">{subsection.content}</p>
 
                   {/* Contact information special case */}
-                  {subsection.contactInfo && (
+                  {"contactInfo" in subsection && subsection.contactInfo && (
                     <ul className="list-disc pl-6 space-y-1 text-gray-700 mt-3">
                       <li>
                         General Inquiries:{" "}
