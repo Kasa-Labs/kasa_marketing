@@ -22,7 +22,7 @@ export default function AboutPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-600">
             Building medical documentation tools that work anywhere, for
-            anyone—especially where they're needed most.
+            anyonee, especially where they're needed most.
           </p>
         </div>
       </section>

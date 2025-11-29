@@ -36,7 +36,7 @@ export function Hero() {
 
         {/* Subheadline */}
         <p className="mx-auto mt-8 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
-          Speak naturally. Get structured notes instantly, for free — no credit
+          Speak naturally. Get structured notes instantly, for free. No credit
           card required.
         </p>
 

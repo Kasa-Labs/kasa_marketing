@@ -173,7 +173,7 @@ const faqs = [
   {
     question: "Do I need to download anything?",
     answer:
-      "No, KasaMD is a web-based application. Just sign up and start using it in your browser—no downloads required.",
+      "No, KasaMD is a web-based application. Just sign up and start using it in your browser. No downloads required.",
   },
   {
     question: "Can I use KasaMD on my phone?",
@@ -217,7 +217,7 @@ export default function FeaturesPage() {
             Professional medical documentation. Free.
           </h1>
           <p className="mt-6 text-lg text-gray-600">
-            Everything you need to streamline clinical documentation—no limits,
+            Everything you need to streamline clinical documentation. No limits,
             no costs.
           </p>
         </div>
