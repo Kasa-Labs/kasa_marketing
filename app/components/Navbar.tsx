@@ -1,0 +1,139 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+
+export function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <img src="/logo_green.png" alt="" className="w-7 h-7" />
+              <span className="ml-1 text-2xl font-bold font-gtsuper text-main">
+                Kasa
+              </span>
+            </Link>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden items-center gap-8 md:flex">
+            <Link
+              href="/features"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+            >
+              Features
+            </Link>
+            <Link
+              href="/features#pricing"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+            >
+              Pricing
+            </Link>
+            <Link
+              href="/about"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+            >
+              About
+            </Link>
+          </div>
+
+          {/* Desktop Auth Buttons */}
+          <div className="hidden items-center gap-4 md:flex">
+            <Link
+              href="https://app.kasamd.com/login"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+            >
+              Login
+            </Link>
+            <Link
+              href="https://app.kasamd.com/signup"
+              className="rounded-lg bg-button px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-button-hover"
+            >
+              Sign up
+            </Link>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            type="button"
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <span className="sr-only">Open menu</span>
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+            >
+              {mobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="border-t border-gray-200 pb-4 pt-4 md:hidden">
+            <div className="flex flex-col gap-4">
+              <Link
+                href="/features"
+                className="text-base font-medium text-gray-700 hover:text-gray-900"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Features
+              </Link>
+              <Link
+                href="/features#pricing"
+                className="text-base font-medium text-gray-700 hover:text-gray-900"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Pricing
+              </Link>
+              <Link
+                href="/about"
+                className="text-base font-medium text-gray-700 hover:text-gray-900"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About
+              </Link>
+              <div className="flex flex-col gap-3 border-t border-gray-200 pt-4">
+                <Link
+                  href="https://app.kasamd.com/login"
+                  className="text-base font-medium text-gray-700 hover:text-gray-900"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="https://app.kasamd.com/signup"
+                  className="rounded-lg bg-gray-900 px-4 py-2 text-center text-base font-semibold text-white hover:bg-gray-800"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Sign up
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}

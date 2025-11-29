@@ -1,26 +1,182 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    @apply text-gray-900;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* FONTS */
+
+@layer base {
+  @font-face {
+    font-family: "FaktPro";
+    src: url("/fonts/Fakt/FaktPro-Blond.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "FaktPro";
+    src: url("/fonts/Fakt/FaktPro-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "FaktPro";
+    src: url("/fonts/Fakt/FaktPro-Normal.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "FaktPro";
+    src: url("/fonts/Fakt/FaktPro-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "FaktPro";
+    src: url("/fonts/Fakt/FaktPro-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DDN";
+    src: url("/fonts/DDN/DDN-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DDN";
+    src: url("/fonts/DDN/DDN-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DDN";
+    src: url("/fonts/DDN/DDN-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DDN";
+    src: url("/fonts/DDN/DDN-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DDN";
+    src: url("/fonts/DDN/DDN-Extrabold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DDN";
+    src: url("/fonts/DDN/DDN-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "GTSuper";
+    src: url("/fonts/GTSuper/GT-Super-Display-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DD";
+    src: url("/fonts/DD/DD-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DD";
+    src: url("/fonts/DD/DD-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DD";
+    src: url("/fonts/DD/DD-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DD";
+    src: url("/fonts/DD/DD-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DD";
+    src: url("/fonts/DD/DD-Extrabold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "DD";
+    src: url("/fonts/DD/DD-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Caslon";
+    src: url("/fonts/Caslon/ACaslonPro-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Caslon";
+    src: url("/fonts/Caslon/ACaslonPro-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+@theme {
+  /* Green Theme */
+  --color-main: #1d4034;
+  --color-placeholder: #616f6b;
+  --color-button: #16a368;
+  --color-button-hover: #1bc47a;
+  --color-selected: #e3f3ec;
+  --color-table-header: #e3ebe8;
+  --color-table-row: #f3f8f6;
+  --color-sidebar: #f3f8f6;
+  --color-search: #e3ebe8;
+  --color-outline: #e3ebe8;
+  --color-pane: #e3ebe8;
+  --color-sample: #fafdfc;
+  --color-label_background: #d7fbe3;
+  --color-label: #2fa554;
+  --color-bsolid: #bbcdc7;
+  --color-ring: #b1d9cb;
+
+  /* Font */
+  --font-fakt: "FaktPro", sans-serif;
+  --font-ddn: "DDN", sans-serif;
+  --font-dd: "DD", sans-serif;
+  --font-gtsuper: "GTSuper", sans-serif;
+  --font-caslon: "Caslon", sans-serif;
 }
