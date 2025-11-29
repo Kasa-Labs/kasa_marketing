@@ -18,7 +18,7 @@ export default function AboutPage() {
           </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Healthcare technology for everyone
+            Accessible healthcare technology
           </h1>
           <p className="mt-6 text-lg text-gray-600">
             Building medical documentation tools that work anywhere, for
