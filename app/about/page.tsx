@@ -21,8 +21,8 @@ export default function AboutPage() {
             Accessible healthcare technology
           </h1>
           <p className="mt-6 text-lg text-gray-600">
-            Building medical documentation tools that work anywhere, for
-            anyonee, especially where they're needed most.
+            Building medical documentation tools that work anywhere, for anyone,
+            especially where they're needed most.
           </p>
         </div>
       </section>
