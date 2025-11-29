@@ -20,7 +20,7 @@ export function ProductDemo() {
             {/* Image container with shadow and border */}
             <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
               <Image
-                src="/images/demo.jpg"
+                src="/images/kasa_app.jpg"
                 alt="KasaMD application interface showing medical voice dictation and clinical documentation"
                 width={1920}
                 height={1080}
