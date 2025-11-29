@@ -163,7 +163,7 @@ const faqs = [
   {
     question: "What happens to my audio recordings?",
     answer:
-      "Your audio is never stored on our servers and is never used to train AI models. Audio is processed in real-time for transcription only and is immediately discarded after processing.",
+      "Your audio is never stored on our servers and is never used to train AI models. Audio is processed in real-time for transcription only.",
   },
   {
     question: "What types of notes can I generate?",
@@ -266,7 +266,7 @@ export default function FeaturesPage() {
                   <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">
                     Feature
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-teal-600">
+                  <th className="px-6 py-4 text-center text-sm font-semibold font-gtsuper text-teal-600">
                     Kasa
                   </th>
                 </tr>
