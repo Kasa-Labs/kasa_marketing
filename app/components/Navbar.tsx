@@ -43,13 +43,13 @@ export function Navbar() {
           {/* Desktop Auth Buttons */}
           <div className="hidden items-center gap-4 md:flex">
             <Link
-              href="https://app.kasamd.com/login"
+              href="https://app.kasamd.com/auth/login"
               className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
             >
               Login
             </Link>
             <Link
-              href="https://app.kasamd.com/signup"
+              href="https://app.kasamd.com/auth/signup"
               className="rounded-lg bg-button px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-button-hover"
             >
               Sign up
