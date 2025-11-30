@@ -7,9 +7,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <span className="text-xl font-bold font-gtsuper text-gray-900">
-              Kasa
-            </span>
+            <img src="/kasa_black.png" alt="" className="h-8" />
             <p className="mt-4 text-sm text-gray-600">
               AI-powered medical documentation for healthcare providers.
             </p>

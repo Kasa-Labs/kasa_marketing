@@ -13,10 +13,8 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <img src="/logo_green.png" alt="" className="w-7 h-7" />
-              <span className="ml-1 text-2xl font-bold font-gtsuper text-main">
-                Kasa
-              </span>
+              {/* <img src="/logo_green.png" alt="" className="w-7 h-7" /> */}
+              <img src="/kasa_green.png" alt="" className="h-8" />
             </Link>
           </div>
 
