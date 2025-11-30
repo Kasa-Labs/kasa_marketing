@@ -114,14 +114,14 @@ export function Navbar() {
               </Link>
               <div className="flex flex-col gap-3 border-t border-gray-200 pt-4">
                 <Link
-                  href="https://app.kasamd.com/login"
+                  href="https://app.kasamd.com/auth/login"
                   className="text-base font-medium text-gray-700 hover:text-gray-900"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Login
                 </Link>
                 <Link
-                  href="https://app.kasamd.com/signup"
+                  href="https://app.kasamd.com/auth/signup"
                   className="rounded-lg bg-gray-900 px-4 py-2 text-center text-base font-semibold text-white hover:bg-gray-800"
                   onClick={() => setMobileMenuOpen(false)}
                 >
