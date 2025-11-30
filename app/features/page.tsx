@@ -267,7 +267,7 @@ export default function FeaturesPage() {
                     Feature
                   </th>
                   <th className="pl-6 py-4 text-center text-sm font-semibold font-gtsuper text-teal-600">
-                    <img src="/kasa_black.png" alt="" className="pl-4 h-4" />
+                    <img src="/kasamd_black.png" alt="" className="pl-4 h-4" />
                   </th>
                 </tr>
               </thead>

@@ -14,7 +14,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               {/* <img src="/logo_green.png" alt="" className="w-7 h-7" /> */}
-              <img src="/kasa_green.png" alt="" className="h-8" />
+              <img src="/kasamd_green.png" alt="" className="h-8" />
             </Link>
           </div>
 
@@ -115,7 +115,7 @@ export function Navbar() {
               <div className="flex flex-col gap-3 border-t border-gray-200 pt-4">
                 <Link
                   href="https://app.kasamd.com/auth/login"
-                  className="text-base font-medium text-gray-700 hover:text-gray-900"
+                  className="rounded-lg bg-white px-4 py-2 text-center text-base font-semibold text-black border"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Login
