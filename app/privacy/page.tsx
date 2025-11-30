@@ -41,7 +41,6 @@ export default function PrivacyPage() {
             <p className="mb-4 text-gray-700">You can reach us at:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Email: privacy@kasamd.com</li>
-              <li>Address: [Your Company Address]</li>
             </ul>
           </section>
 
