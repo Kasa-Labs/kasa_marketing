@@ -22,7 +22,7 @@ const job = {
     "Help identify and solve real clinical workflow challenges through technology",
   ],
   qualifications: [
-    "Currently pursuing or recently completed a degree in Computer Science, Software Engineering, or related field",
+    "Degree in Computer Science, Software Engineering, or other relevant programming experience",
     "Strong foundation in JavaScript/TypeScript and modern web development",
     "Experience with React or similar frontend frameworks",
     "Familiarity with backend development (Node.js, APIs, databases)",
