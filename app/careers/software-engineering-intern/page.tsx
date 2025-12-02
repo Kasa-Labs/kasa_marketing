@@ -200,7 +200,7 @@ export default function JobPostingPage() {
                 <li>Submit your application with resume and cover letter</li>
                 <li>Initial screening call (30 minutes)</li>
                 <li>Technical interview (60-90 minutes)</li>
-                <li>Letters of recommendation (3 required)</li>
+                <li>Letters of recommendation/reference (3 required)</li>
                 <li>Final decision</li>
               </ol>
               <p>
