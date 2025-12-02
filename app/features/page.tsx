@@ -337,7 +337,7 @@ export default function FeaturesPage() {
               href="https://app.kasamd.com/signup"
               className="rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600"
             >
-              Try Our Demo
+              Try For Free
             </Link>
           </div>
         </div>
