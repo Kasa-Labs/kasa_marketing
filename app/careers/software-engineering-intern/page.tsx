@@ -194,17 +194,6 @@ export default function JobPostingPage() {
                 <li>Letters of recommendation/reference (3 required)</li>
                 <li>Final decision</li>
               </ol>
-              <p>
-                If you advance past the technical interview, we'll request three
-                letters of recommendation to be sent to{" "}
-                <a
-                  href="mailto:hr@kasamd.com"
-                  className="text-purple-700 hover:text-purple-600"
-                >
-                  hr@kasamd.com
-                </a>
-                .
-              </p>
             </div>
           </div>
           {/* CTA */}
