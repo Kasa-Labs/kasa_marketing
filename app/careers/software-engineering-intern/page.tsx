@@ -53,13 +53,6 @@ const job = {
     "Opportunity to contribute to a mission-driven startup from the ground up",
     "Real ownership over features that ship to production",
   ],
-  applicationProcess: [
-    "Submit your application with resume and a brief note about why you're interested",
-    "Initial conversation about your background and our mission (30 min)",
-    "Technical discussion and/or coding exercise",
-    "Meet the team and discuss potential projects",
-    "Decision and offer",
-  ],
 };
 
 export default function JobPostingPage() {

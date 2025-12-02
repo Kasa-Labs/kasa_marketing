@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const openPositions = [
   {
-    id: "software-engineering-intern-2026",
+    id: "software-engineering-intern",
     title: "Software Engineering Intern - Healthcare AI Platform",
     type: "Internship",
     location: "Remote",
