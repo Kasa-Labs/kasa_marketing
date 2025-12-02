@@ -190,18 +190,6 @@ export default function JobPostingPage() {
             </ul>
           </div>
 
-          {/* Application Process */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900">
-              Application Process
-            </h2>
-            <ol className="mt-4 list-decimal space-y-2 pl-5 text-base text-gray-600">
-              {job.applicationProcess.map((step, index) => (
-                <li key={index}>{step}</li>
-              ))}
-            </ol>
-          </div>
-
           {/* CTA */}
           <div className="mt-12 border-t border-gray-200 pt-8">
             <div className="text-center">
@@ -220,10 +208,6 @@ export default function JobPostingPage() {
                   Apply Now
                 </a>
               </div>
-              <p className="mt-4 text-sm text-gray-500">
-                We review applications on a rolling basis and will get back to
-                you within a week.
-              </p>
             </div>
           </div>
         </div>
