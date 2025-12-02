@@ -22,7 +22,7 @@ const job = {
     "Help identify and solve real clinical workflow challenges through technology",
   ],
   qualifications: [
-    "Strong educational background or experience in healthcare or medical sciences,",
+    "Strong educational background or experience in healthcare or medical sciences",
     "Degree in Computer Science, Software Engineering, or other relevant programming experience",
     "Strong foundation in JavaScript/TypeScript and modern web development",
     "Experience with React or similar frontend frameworks",
@@ -186,7 +186,7 @@ export default function JobPostingPage() {
               ))}
             </ul>
           </div>
-          Here's the updated code: tsx{/* Application Process - NEW SECTION */}
+
           <div>
             <h2 className="text-2xl font-bold text-gray-900">
               Application Process
