@@ -41,7 +41,6 @@ const job = {
   youllLearn: [
     "Full-stack web development in a production healthcare environment",
     "Integration of AI/ML capabilities into real-world applications",
-    "Building HIPAA-compliant systems with proper security and audit controls",
     "Product development in resource-constrained environments",
     "Healthcare workflows and clinical documentation practices",
     "Working directly with physicians to solve real clinical problems",
