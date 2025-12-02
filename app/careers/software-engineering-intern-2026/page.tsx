@@ -9,7 +9,7 @@ const job = {
   description:
     "Join our founding team to build AI-powered medical documentation tools that serve healthcare providers in underserved regions worldwide.",
   about: [
-    "KasaMD is a physician-led healthcare technology company on a mission to expand access to quality medical documentation. We're building AI-powered tools specifically designed for healthcare providers in resource-limited settings, particularly across Africa and other underserved regions.",
+    "KasaMD is a physician-led healthcare technology company on a mission to expand access to quality medical documentation. We're building AI-powered tools specifically designed for healthcare providers in resource-limited settings, particularly in Ghana.",
     "As a software engineering intern, you'll work directly with our founding team to build features that have real impact on healthcare delivery. This is an opportunity to contribute to meaningful work while gaining hands-on experience with modern web technologies, AI integration, and healthcare systems.",
   ],
   responsibilities: [
