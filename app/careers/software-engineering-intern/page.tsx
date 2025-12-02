@@ -22,6 +22,7 @@ const job = {
     "Help identify and solve real clinical workflow challenges through technology",
   ],
   qualifications: [
+    "Strong educational background or experience in healthcare or medical sciences,",
     "Degree in Computer Science, Software Engineering, or other relevant programming experience",
     "Strong foundation in JavaScript/TypeScript and modern web development",
     "Experience with React or similar frontend frameworks",
@@ -123,7 +124,6 @@ export default function JobPostingPage() {
               ))}
             </div>
           </div>
-
           {/* Responsibilities */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900">
@@ -135,7 +135,6 @@ export default function JobPostingPage() {
               ))}
             </ul>
           </div>
-
           {/* Qualifications */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900">
@@ -147,7 +146,6 @@ export default function JobPostingPage() {
               ))}
             </ul>
           </div>
-
           {/* Preferred Qualifications */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900">
@@ -159,7 +157,6 @@ export default function JobPostingPage() {
               ))}
             </ul>
           </div>
-
           {/* What You'll Learn */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900">
@@ -171,7 +168,6 @@ export default function JobPostingPage() {
               ))}
             </ul>
           </div>
-
           {/* What We Offer */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900">What We Offer</h2>
@@ -181,7 +177,46 @@ export default function JobPostingPage() {
               ))}
             </ul>
           </div>
-
+          {/* What We Offer */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">Admissions P</h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-gray-600">
+              {job.weOffer.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          Here's the updated code: tsx{/* Application Process - NEW SECTION */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">
+              Application Process
+            </h2>
+            <div className="mt-4 space-y-4 text-base text-gray-600">
+              <p>
+                Our interview process is straightforward and designed to be
+                respectful of your time:
+              </p>
+              <ol className="list-decimal space-y-2 pl-5">
+                <li>Submit your application with resume and cover letter</li>
+                <li>Initial screening call (30 minutes)</li>
+                <li>Technical interview (60-90 minutes)</li>
+                <li>Letters of recommendation (3 required)</li>
+                <li>Final decision</li>
+              </ol>
+              <p>
+                If you advance past the technical interview, we'll request three
+                letters of recommendation. Please have your recommenders send
+                their letters directly to{" "}
+                <a
+                  href="mailto:hr@kasamd.com"
+                  className="text-purple-700 hover:text-purple-600"
+                >
+                  hr@kasamd.com
+                </a>
+                .
+              </p>
+            </div>
+          </div>
           {/* CTA */}
           <div className="mt-12 border-t border-gray-200 pt-8">
             <div className="text-center">
