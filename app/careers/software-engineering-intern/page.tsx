@@ -179,7 +179,7 @@ export default function JobPostingPage() {
           </div>
           {/* What We Offer */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">Admissions P</h2>
+            <h2 className="text-2xl font-bold text-gray-900">What We Offer</h2>
             <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-gray-600">
               {job.weOffer.map((item, index) => (
                 <li key={index}>{item}</li>
