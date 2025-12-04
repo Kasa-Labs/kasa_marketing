@@ -144,13 +144,13 @@ export function FeaturesOverview() {
 
         <div className="relative flex flex-col items-center justify-center gap-6 px-8 py-16 sm:flex-row">
           <h3 className="w-full text-center text-2xl font-bold text-gray-900 sm:hidden">
-            Start using KasaMD free today
+            Use KasaMD for free today
           </h3>
           <Link
             href="https://app.kasamd.com/signup"
             className="w-full rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600 sm:w-auto"
           >
-            Start Free Today
+            Get Started
           </Link>
           <Link
             href="/features"
