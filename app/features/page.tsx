@@ -177,7 +177,8 @@ const faqs = [
   },
   {
     question: "Can I use KasaMD on my phone?",
-    answer: "Yes! KasaMD works on desktop, tablet, and mobile devices.",
+    answer:
+      "KasaMD is optimized for desktop and tablet devices, where clinical documentation workflows work best. Mobile access is available but we recommend wider screens for the full experience. Native mobile apps are on our roadmap.",
   },
   {
     question: "How accurate is the AI transcription?",
