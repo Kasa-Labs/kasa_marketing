@@ -68,18 +68,18 @@ export default function AboutPage() {
                 Physician-led
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Built by healthcare providers who understand clinical workflows,
-                not just engineers guessing at what doctors need.
+                Built by healthcare providers who understand clinical workflows
+                and the realities of patient care.
               </p>
             </div>
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900">
-                Truly free
+                Open access
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                No hidden costs, no credit cards, no "free trials." Professional
-                tools should be accessible to all.
+                No credit cards, no paywalls to get started. We believe in
+                removing barriers to quality documentation tools.
               </p>
             </div>
 
@@ -95,11 +95,11 @@ export default function AboutPage() {
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900">
-                Privacy by design
+                End-to-end workflow
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Built with responsible data handling practices as we work toward
-                industry compliance certifications.
+                From recording to finished note in one seamless flow.
+                Transcription, editing, and export without switching tools.
               </p>
             </div>
 
