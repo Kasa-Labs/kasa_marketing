@@ -145,15 +145,13 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900">
             Join us in making healthcare documentation accessible
           </h2>
-          <p className="mx-auto mt-4 max-w-lg text-base text-gray-600">
-            KasaMD is currently in research preview with simulated data only.
-          </p>
+
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link
               href="https://app.kasamd.com/signup"
               className="rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600"
             >
-              Try the Demo
+              Get Started
             </Link>
           </div>
         </div>
