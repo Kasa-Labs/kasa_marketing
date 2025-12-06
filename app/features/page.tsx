@@ -161,9 +161,9 @@ const faqs = [
       "No. You get unlimited transcriptions, unlimited clinical notes, unlimited templates, and unlimited patient records.",
   },
   {
-    question: "What happens to my audio recordings?",
+    question: "How is my data handled?",
     answer:
-      "Your audio is never stored on our servers and is never used to train AI models. Audio is processed in real-time for transcription only.",
+      "Audio is processed in real-time for transcription and is not permanently stored on our servers. We're committed to responsible data handling as we work toward industry compliance certifications.",
   },
   {
     question: "What types of notes can I generate?",
@@ -337,7 +337,7 @@ export default function FeaturesPage() {
               href="https://app.kasamd.com/signup"
               className="rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600"
             >
-              Try For Free
+              Get Started
             </Link>
           </div>
         </div>
