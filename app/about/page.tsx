@@ -31,7 +31,7 @@ export default function AboutPage() {
       <section className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900">
-            Why we built KasaMD
+            Why we're building KasaMD
           </h2>
           <div className="mt-6 space-y-4 text-lg text-gray-600">
             <p>
@@ -95,11 +95,11 @@ export default function AboutPage() {
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900">
-                Privacy first
+                Privacy by design
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Your audio is never stored or used to train AI models. Patient
-                data is encrypted and secure.
+                Built with responsible data handling practices as we work toward
+                industry compliance certifications.
               </p>
             </div>
 
@@ -118,8 +118,8 @@ export default function AboutPage() {
                 No compromises
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Enterprise-grade features and security from day one, not
-                watered-down versions for limited markets.
+                Professional-grade features from day one, not watered-down
+                versions for limited markets.
               </p>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             KasaMD is physician-led and built by a small team passionate about
             health equity and accessible technology. We combine clinical
             expertise with technical innovation to create tools that genuinely
-            serve healthcare providers in underserved regions.
+            serve healthcare providers.
           </p>
         </div>
       </section>
@@ -145,12 +145,15 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900">
             Join us in making healthcare documentation accessible
           </h2>
+          <p className="mx-auto mt-4 max-w-lg text-base text-gray-600">
+            KasaMD is currently in research preview with simulated data only.
+          </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link
               href="https://app.kasamd.com/signup"
               className="rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600"
             >
-              Try For Free
+              Try the Demo
             </Link>
           </div>
         </div>
