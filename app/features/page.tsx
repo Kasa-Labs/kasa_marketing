@@ -163,7 +163,7 @@ const faqs = [
   {
     question: "How is my data handled?",
     answer:
-      "Audio is processed in real-time for transcription and is not permanently stored on our servers. We're committed to responsible data handling as we work toward industry compliance certifications.",
+      "Audio is processed in real-time for transcription and is not permanently stored on our servers.",
   },
   {
     question: "What types of notes can I generate?",
