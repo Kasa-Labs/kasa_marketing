@@ -22,7 +22,7 @@ export default function AboutPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-600">
             Building medical documentation tools that work anywhere, for anyone,
-            especially where they're needed most.
+            starting in Ghana and expanding to underserved regions worldwide.
           </p>
         </div>
       </section>
@@ -46,9 +46,39 @@ export default function AboutPage() {
               practice or what resources they have access to.
             </p>
             <p>
-              Our goal is to expand access to quality medical documentation
-              tools in underserved regions, starting with areas where cost and
-              infrastructure are barriers to adopting existing solutions.
+              We're starting where the need is greatest. Our team is currently
+              working with physicians in Ghana to build and refine documentation
+              tools designed for the realities of practice in resource-limited
+              settings—intermittent connectivity, shared devices, and high
+              patient volumes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ghana Initiative Section */}
+      <section className="bg-gradient-to-r from-emerald-50 to-teal-50 px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900">
+            Our work in Ghana
+          </h2>
+          <div className="mt-6 space-y-4 text-lg text-gray-600">
+            <p>
+              Ghana has a growing healthcare system with dedicated providers,
+              but many clinics still rely on paper records or fragmented digital
+              tools that don't fit local workflows. Documentation time takes
+              physicians away from patients.
+            </p>
+            <p>
+              We're partnering with physicians to pilot KasaMD in real clinical
+              environments. This collaboration shapes everything we build—from
+              offline-first architecture to workflows that match how care is
+              actually delivered on the ground.
+            </p>
+            <p>
+              Our goal is to prove that world-class medical documentation
+              doesn't require world-class infrastructure, then expand this model
+              to underserved regions across West Africa and beyond.
             </p>
           </div>
         </div>
@@ -85,11 +115,11 @@ export default function AboutPage() {
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900">
-                Designed for accessibility
+                Offline-first
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Building with reliability and offline functionality in mind to
-                serve providers in diverse settings.
+                Designed to work reliably with intermittent connectivity,
+                because healthcare doesn't wait for a stable network.
               </p>
             </div>
 
@@ -108,8 +138,8 @@ export default function AboutPage() {
                 Health equity
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Focused on expanding healthcare access through technology that
-                serves underserved regions.
+                Starting in Ghana and expanding to regions where cost and
+                infrastructure are barriers to existing solutions.
               </p>
             </div>
 
@@ -132,9 +162,9 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900">The team</h2>
           <p className="mt-6 text-lg text-gray-600">
             KasaMD is physician-led and built by a small team passionate about
-            health equity and accessible technology. We combine clinical
-            expertise with technical innovation to create tools that genuinely
-            serve healthcare providers.
+            health equity and accessible technology. Our co-founder practices
+            medicine and is actively piloting our tools with colleagues in
+            Ghana, ensuring everything we build serves real clinical needs.
           </p>
         </div>
       </section>
