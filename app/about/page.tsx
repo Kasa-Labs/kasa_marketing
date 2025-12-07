@@ -49,20 +49,9 @@ export default function AboutPage() {
               We're starting where the need is greatest. Our team is currently
               working with physicians in Ghana to build and refine documentation
               tools designed for the realities of practice in resource-limited
-              settings—intermittent connectivity, shared devices, and high
+              settings: intermittent connectivity, shared devices, and high
               patient volumes.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Ghana Initiative Section */}
-      <section className="bg-gradient-to-r from-emerald-50 to-teal-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Our work in Ghana
-          </h2>
-          <div className="mt-6 space-y-4 text-lg text-gray-600">
             <p>
               Ghana has a growing healthcare system with dedicated providers,
               but many clinics still rely on paper records or fragmented digital
@@ -71,7 +60,7 @@ export default function AboutPage() {
             </p>
             <p>
               We're partnering with physicians to pilot KasaMD in real clinical
-              environments. This collaboration shapes everything we build—from
+              environments. This collaboration shapes everything we build, from
               offline-first architecture to workflows that match how care is
               actually delivered on the ground.
             </p>
@@ -162,9 +151,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900">The team</h2>
           <p className="mt-6 text-lg text-gray-600">
             KasaMD is physician-led and built by a small team passionate about
-            health equity and accessible technology. Our co-founder practices
-            medicine and is actively piloting our tools with colleagues in
-            Ghana, ensuring everything we build serves real clinical needs.
+            health equity and accessible technology.
           </p>
         </div>
       </section>
