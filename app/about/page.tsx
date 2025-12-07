@@ -21,8 +21,7 @@ export default function AboutPage() {
             Accessible healthcare technology
           </h1>
           <p className="mt-6 text-lg text-gray-600">
-            Building medical documentation tools that work anywhere, for anyone,
-            starting in Ghana and expanding to underserved regions worldwide.
+            Building medical documentation tools that work anywhere, for anyone.
           </p>
         </div>
       </section>
