@@ -64,10 +64,10 @@ export default function AboutPage() {
               existing documentation solutions impractical.
             </p>
             <p>
-              We're piloting KasaMD with physicians in Ghana to build tools that
-              work in real clinical environments. Their feedback shapes
-              everything we build, from offline-first architecture to workflows
-              designed for how care is actually delivered.
+              We're piloting KasaMD with physicians in West Africa to build
+              tools that work in real clinical environments. Their feedback
+              shapes everything we build, from offline-first architecture to
+              workflows designed for how care is actually delivered.
             </p>
           </div>
         </div>
