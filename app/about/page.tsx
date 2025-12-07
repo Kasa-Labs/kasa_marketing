@@ -3,12 +3,10 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <div className="bg-white">
-      {/* Hero Section */}
       <section className="relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-purple-50 to-blue-50" />
 
         <div className="relative mx-auto max-w-4xl text-center">
-          {/* Pill Badge */}
           <div className="mb-8 flex justify-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2">
               <span className="text-sm font-medium text-emerald-900">
@@ -54,7 +52,27 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values/Approach Section */}
+      {/* Our Story Section */}
+      <section className="bg-gradient-to-r from-emerald-50 to-teal-50 px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900">Our story</h2>
+          <div className="mt-6 space-y-4 text-lg text-gray-600">
+            <p>
+              In many parts of the world, clinics rely on paper records or
+              fragmented systems that don't fit local workflows. High patient
+              volumes, shared devices, and intermittent connectivity make most
+              existing documentation solutions impractical.
+            </p>
+            <p>
+              We're piloting KasaMD with physicians in Ghana to build tools that
+              work in real clinical environments. Their feedback shapes
+              everything we build, from offline-first architecture to workflows
+              designed for how care is actually delivered.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-center text-3xl font-bold text-gray-900">
@@ -62,7 +80,6 @@ export default function AboutPage() {
           </h2>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {/* Principle cards */}
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900">
                 Physician-led
@@ -126,7 +143,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900">The team</h2>
