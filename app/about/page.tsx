@@ -21,7 +21,8 @@ export default function AboutPage() {
             Accessible healthcare technology
           </h1>
           <p className="mt-6 text-lg text-gray-600">
-            Building medical documentation tools that work anywhere, for anyone.
+            Building medical documentation tools that work anywhere, for anyone,
+            especially where they're needed most.
           </p>
         </div>
       </section>
@@ -45,28 +46,9 @@ export default function AboutPage() {
               practice or what resources they have access to.
             </p>
             <p>
-              We're starting where the need is greatest. Our team is currently
-              working with physicians in Ghana to build and refine documentation
-              tools designed for the realities of practice in resource-limited
-              settings: intermittent connectivity, shared devices, and high
-              patient volumes.
-            </p>
-            <p>
-              Ghana has a growing healthcare system with dedicated providers,
-              but many clinics still rely on paper records or fragmented digital
-              tools that don't fit local workflows. Documentation time takes
-              physicians away from patients.
-            </p>
-            <p>
-              We're partnering with physicians to pilot KasaMD in real clinical
-              environments. This collaboration shapes everything we build, from
-              offline-first architecture to workflows that match how care is
-              actually delivered on the ground.
-            </p>
-            <p>
-              Our goal is to prove that world-class medical documentation
-              doesn't require world-class infrastructure, then expand this model
-              to underserved regions across West Africa and beyond.
+              Our goal is to expand access to quality medical documentation
+              tools in underserved regions, starting with areas where cost and
+              infrastructure are barriers to adopting existing solutions.
             </p>
           </div>
         </div>
@@ -103,11 +85,11 @@ export default function AboutPage() {
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900">
-                Offline-first
+                Designed for accessibility
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Designed to work reliably with intermittent connectivity,
-                because healthcare doesn't wait for a stable network.
+                Building with reliability and offline functionality in mind to
+                serve providers in diverse settings.
               </p>
             </div>
 
@@ -126,8 +108,8 @@ export default function AboutPage() {
                 Health equity
               </h3>
               <p className="mt-3 text-base text-gray-600">
-                Starting in Ghana and expanding to regions where cost and
-                infrastructure are barriers to existing solutions.
+                Focused on expanding healthcare access through technology that
+                serves underserved regions.
               </p>
             </div>
 
@@ -150,7 +132,9 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900">The team</h2>
           <p className="mt-6 text-lg text-gray-600">
             KasaMD is physician-led and built by a small team passionate about
-            health equity and accessible technology.
+            health equity and accessible technology. We combine clinical
+            expertise with technical innovation to create tools that genuinely
+            serve healthcare providers.
           </p>
         </div>
       </section>
