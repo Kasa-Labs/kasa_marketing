@@ -11,6 +11,9 @@ export function Footer() {
             <p className="mt-4 text-sm text-gray-600">
               AI-powered medical documentation for healthcare providers.
             </p>
+            <p className="mt-4 text-sm text-gray-600">
+              Built in USA and Ghana.
+            </p>
           </div>
 
           {/* Product */}
