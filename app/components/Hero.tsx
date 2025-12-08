@@ -37,7 +37,7 @@ export function Hero() {
         {/* Subheadline */}
         <p className="mx-auto mt-8 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
           Clinical documentation and decision support for providers. Transcribe
-          visits, access drug information, generate notes, for free.
+          visits, access medical information, generate notes, for free.
         </p>
 
         {/* CTA Buttons */}
@@ -46,7 +46,7 @@ export function Hero() {
             href="https://app.kasamd.com/signup"
             className="w-full rounded-lg bg-button px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-button-hover sm:w-auto"
           >
-            Start Free Today
+            Get Started Free
           </Link>
         </div>
       </div>
