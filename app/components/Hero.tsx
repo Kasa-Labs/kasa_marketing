@@ -46,7 +46,7 @@ export function Hero() {
             href="https://app.kasamd.com/signup"
             className="w-full rounded-lg bg-button px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-button-hover sm:w-auto"
           >
-            Get Started Free
+            Get Started
           </Link>
         </div>
       </div>
