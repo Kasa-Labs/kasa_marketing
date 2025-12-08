@@ -19,15 +19,6 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-4xl">
-        {/* Pill Badge */}
-        <div className="mb-8 flex justify-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2">
-            <span className="text-sm font-medium text-emerald-900">
-              Free AI Medical Documentation
-            </span>
-          </div>
-        </div>
-
         {/* Main Headline */}
         <h1 className="text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
           Clinical documentation. <br />
