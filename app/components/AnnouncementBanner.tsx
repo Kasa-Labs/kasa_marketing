@@ -6,7 +6,7 @@ export function AnnouncementBanner() {
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-center text-center">
           <p className="text-sm font-medium text-gray-900 sm:text-base">
-            Save time on clinical notes. →
+            Clinical documentation without barriers. →
           </p>
           <Link
             href="https://app.kasamd.com"
