@@ -21,14 +21,15 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl">
         {/* Main Headline */}
         <h1 className="text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-          Clinical documentation. <br />
-          Zero cost.
+          Your AI scribe. <br />
+          No internet required.
         </h1>
 
         {/* Subheadline */}
         <p className="mx-auto mt-8 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
-          Clinical documentation and decision support for providers. Transcribe
-          visits, access medical information, generate notes, for free.
+          Clinical documentation and decision support for clinicians who don't
+          have stable internet. Transcribe visits and generate notes, offline
+          for free.
         </p>
 
         {/* CTA Buttons */}
