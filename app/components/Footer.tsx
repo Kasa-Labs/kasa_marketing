@@ -41,7 +41,15 @@ export function Footer() {
                   href="https://app.kasamd.com"
                   className="text-sm text-gray-600 hover:text-gray-900"
                 >
-                  Demo
+                  Transcribe
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://intake.kasamd.com"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Intake
                 </Link>
               </li>
             </ul>

@@ -38,6 +38,18 @@ export function Navbar() {
             >
               About
             </Link>
+            <Link
+              href="https://app.kasamd.com"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+            >
+              Transcribe
+            </Link>
+            <Link
+              href="https://intake.kasamd.com"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+            >
+              Intake
+            </Link>
           </div>
 
           {/* Desktop Auth Buttons */}
@@ -111,6 +123,20 @@ export function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="https://app.kasamd.com"
+                className="text-base font-medium text-gray-700 hover:text-gray-900"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Transcribe
+              </Link>
+              <Link
+                href="https://intake.kasamd.com"
+                className="text-base font-medium text-gray-700 hover:text-gray-900"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Intake
               </Link>
               <div className="flex flex-col gap-3 border-t border-gray-200 pt-4">
                 <Link
