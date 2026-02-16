@@ -27,12 +27,6 @@ export function Navbar() {
               Features
             </Link>
             <Link
-              href="/features#pricing"
-              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
-            >
-              Pricing
-            </Link>
-            <Link
               href="/about"
               className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
             >
@@ -46,9 +40,12 @@ export function Navbar() {
             </Link>
             <Link
               href="https://intake.kasamd.com"
-              className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+              className="relative text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
             >
               Intake
+              <span className="absolute -right-5 -top-1 text-[10px] font-semibold text-emerald-600">
+                new
+              </span>
             </Link>
           </div>
 
@@ -111,13 +108,6 @@ export function Navbar() {
                 Features
               </Link>
               <Link
-                href="/features#pricing"
-                className="text-base font-medium text-gray-700 hover:text-gray-900"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Pricing
-              </Link>
-              <Link
                 href="/about"
                 className="text-base font-medium text-gray-700 hover:text-gray-900"
                 onClick={() => setMobileMenuOpen(false)}
@@ -133,10 +123,13 @@ export function Navbar() {
               </Link>
               <Link
                 href="https://intake.kasamd.com"
-                className="text-base font-medium text-gray-700 hover:text-gray-900"
+                className="relative text-base font-medium text-gray-700 hover:text-gray-900"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Intake
+                <span className="ml-2 text-[10px] font-semibold text-emerald-600">
+                  new
+                </span>
               </Link>
               <div className="flex flex-col gap-3 border-t border-gray-200 pt-4">
                 <Link
