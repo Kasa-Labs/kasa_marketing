@@ -44,7 +44,7 @@ export function Navbar() {
             >
               Boafo
               <span className="absolute -right-5 -top-1 text-[10px] font-semibold text-emerald-600">
-                bet
+                beta
               </span>
             </Link>
           </div>
