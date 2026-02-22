@@ -46,10 +46,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://intake.kasamd.com"
+                  href="https://boafo.kasamd.com"
                   className="text-sm text-gray-600 hover:text-gray-900"
                 >
-                  Intake
+                  Boafo
                 </Link>
               </li>
             </ul>
