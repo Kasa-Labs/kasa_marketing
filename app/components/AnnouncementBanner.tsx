@@ -6,13 +6,13 @@ export function AnnouncementBanner() {
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-center text-center">
           <p className="text-sm font-medium text-gray-900 sm:text-base">
-            Clinical documentation without barriers. →
+            "Patient intake, simplified. →"
           </p>
           <Link
-            href="https://app.kasamd.com"
+            href="https://boafo.kasamd.com"
             className="ml-1 inline-flex items-center underline text-sm font-semibold text-gray-900 transition-transform sm:text-base"
           >
-            Try it now
+            Try Boafo
           </Link>
         </div>
       </div>
