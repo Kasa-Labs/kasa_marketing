@@ -21,8 +21,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl">
         {/* Main Headline */}
         <h1 className="text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-          Your AI scribe. <br />
-          No internet required.
+          Clinical documentation without barriers.
         </h1>
 
         {/* Subheadline */}
