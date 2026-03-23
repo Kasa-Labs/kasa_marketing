@@ -24,6 +24,12 @@ export function Hero() {
           For Free.
         </h1>
 
+        {/* Subheadline */}
+        <p className="mx-auto mt-8 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
+          Transcribe patient visits and generate clinical notes, right from
+          your Mac.
+        </p>
+
         {/* Download CTA */}
         <div className="mt-12 flex flex-col items-center justify-center gap-4">
           <a
