@@ -19,17 +19,13 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl">
         {/* Main Headline */}
         <h1 className="text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-          Offline Clinical Transcription. For Free.
+          <span className="whitespace-nowrap">Offline Clinical Documentation.</span>
+          <br />
+          For Free.
         </h1>
 
-        {/* Subheadline */}
-        <p className="mx-auto mt-8 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
-          Transcribe patient visits and generate clinical notes — right from
-          your Mac, no internet needed.
-        </p>
-
         {/* Download CTA */}
-        <div className="mt-10 flex flex-col items-center justify-center gap-4">
+        <div className="mt-12 flex flex-col items-center justify-center gap-4">
           <a
             href="https://downloads.kasamd.com/public/KasaMD-0.1.dmg"
             className="inline-flex items-center gap-3 rounded-xl bg-gray-900 px-7 py-3.5 text-white shadow-lg transition-all hover:bg-black hover:shadow-xl"
