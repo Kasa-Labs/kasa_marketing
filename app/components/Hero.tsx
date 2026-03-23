@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -21,7 +21,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl">
         {/* Main Headline */}
         <h1 className="text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-          Clinical documentation without barriers.
+          Offline Clinical Transcription. For Free.
         </h1>
 
         {/* Subheadline */}
@@ -31,14 +31,31 @@ export function Hero() {
           for free.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link
-            href="https://app.kasamd.com/signup"
-            className="w-full rounded-lg bg-button px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-button-hover sm:w-auto"
+        {/* Download CTA */}
+        <div className="mt-10 flex flex-col items-center justify-center gap-4">
+          <a
+            href="https://downloads.kasamd.com/public/KasaMD-0.1.dmg"
+            className="flex items-center gap-4 rounded-2xl bg-white/80 px-8 py-4 shadow-lg backdrop-blur transition-all hover:shadow-xl hover:bg-white"
           >
-            Get Started
-          </Link>
+            <Image
+              src="/images/app_logo.png"
+              alt="KasaMD app icon"
+              width={56}
+              height={56}
+              className="rounded-xl"
+            />
+            <div className="flex flex-col">
+              <span className="text-lg font-semibold text-gray-900">
+                Download for Mac
+              </span>
+              <span className="text-sm text-gray-500">
+                Requires Apple Silicon (M1 or later)
+              </span>
+            </div>
+          </a>
+          <p className="text-xs text-gray-400">
+            macOS app &middot; Free &middot; No internet required
+          </p>
         </div>
       </div>
     </section>
