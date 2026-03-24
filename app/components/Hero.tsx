@@ -16,10 +16,10 @@ export function Hero() {
         <div className="h-[800px] w-[800px] rounded-full bg-gradient-to-br from-orange-100/20 to-amber-100/20 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-4xl">
+      <div className="relative mx-auto max-w-5xl">
         {/* Main Headline */}
-        <h1 className="text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-          <span className="whitespace-nowrap">Offline Clinical Documentation.</span>
+        <h1 className="mx-auto max-w-xs text-center text-5xl font-bold tracking-tight text-gray-900 sm:max-w-none sm:text-6xl lg:text-7xl">
+          Offline Clinical Documentation.
           <br />
           For Free.
         </h1>
