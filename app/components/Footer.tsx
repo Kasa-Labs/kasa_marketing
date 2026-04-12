@@ -36,22 +36,6 @@ export function Footer() {
                   Pricing
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="https://app.kasamd.com"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
-                  Transcribe
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://boafo.kasamd.com"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
-                  Boafo
-                </Link>
-              </li>
             </ul>
           </div>
 

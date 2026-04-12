@@ -164,10 +164,10 @@ export default function AboutPage() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="https://app.kasamd.com/signup"
+              href="/"
               className="rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600"
             >
-              Get Started
+              Download
             </Link>
           </div>
         </div>

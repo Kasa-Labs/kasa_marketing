@@ -147,10 +147,10 @@ export function FeaturesOverview() {
             Use KasaMD for free today
           </h3>
           <Link
-            href="https://app.kasamd.com/signup"
+            href="/features"
             className="w-full rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600 sm:w-auto"
           >
-            Get Started
+            Learn More
           </Link>
           <Link
             href="/features"
