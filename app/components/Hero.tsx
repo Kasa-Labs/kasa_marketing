@@ -24,8 +24,8 @@ export function Hero() {
 
         {/* Subheadline */}
         <p className="mx-auto mt-8 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
-          Transcribe patient visits and generate clinical notes — right from
-          your Mac, no internet needed.
+          Transcribe patient visits and generate clinical notes right from
+          your Mac. No internet needed.
         </p>
 
         {/* Download CTA */}

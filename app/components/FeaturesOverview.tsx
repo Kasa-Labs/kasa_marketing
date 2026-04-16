@@ -7,7 +7,7 @@ const features = [
   {
     name: "Offline AI Transcription",
     description:
-      "Convert speech to text with high accuracy — fully on-device, no internet needed",
+      "Convert speech to text with high accuracy, fully on-device. No internet needed.",
     icon: (
       <svg
         className="h-12 w-12"

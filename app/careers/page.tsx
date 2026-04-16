@@ -31,7 +31,7 @@ export default function CareersPage() {
 
           <p className="mt-6 text-base text-gray-600">
             We don't have any open positions right now. Reach out if our mission
-            resonates — we'd love to hear from you.
+            resonates. We'd love to hear from you.
           </p>
         </div>
       </section>

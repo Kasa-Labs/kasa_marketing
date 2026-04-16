@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | KasaMD",
   },
   description:
-    "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes — no internet required.",
+    "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes. No internet required.",
   keywords: [
     "offline clinical transcription",
     "offline medical documentation",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "KasaMD",
     title: "KasaMD - Offline Clinical Transcription for Mac",
     description:
-      "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes — no internet required.",
+      "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes. No internet required.",
   },
   twitter: {
     card: "summary_large_image",

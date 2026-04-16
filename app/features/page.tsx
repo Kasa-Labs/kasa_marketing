@@ -141,7 +141,7 @@ const kasaFeatures = [
     feature: "Fully Offline",
     included: true,
     description:
-      "Transcription and note generation run entirely on your Mac — no internet required",
+      "Transcription and note generation run entirely on your Mac. No internet required.",
   },
 ];
 
@@ -164,7 +164,7 @@ const faqs = [
   {
     question: "How is my data handled?",
     answer:
-      "KasaMD runs entirely on your Mac. Audio, transcripts, and notes stay on your device — nothing is sent to our servers.",
+      "KasaMD runs entirely on your Mac. Audio, transcripts, and notes stay on your device. Nothing is sent to our servers.",
   },
   {
     question: "What types of notes can I generate?",
@@ -174,12 +174,12 @@ const faqs = [
   {
     question: "Do I need to download anything?",
     answer:
-      "Yes. KasaMD is a native macOS app — download the .dmg, drag it to Applications, and you're ready to go. No account or sign-up required.",
+      "Yes. KasaMD is a native macOS app. Download the .dmg, drag it to Applications, and you're ready to go. No account or sign-up required.",
   },
   {
     question: "Does KasaMD need an internet connection?",
     answer:
-      "No. KasaMD is fully offline. Transcription and note generation run locally on your Mac, so it works anywhere — clinic, home visits, or low-connectivity environments.",
+      "No. KasaMD is fully offline. Transcription and note generation run locally on your Mac, so it works anywhere: clinic, home visits, or low-connectivity environments.",
   },
   {
     question: "What devices does KasaMD support?",
@@ -225,7 +225,7 @@ export default function FeaturesPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-600">
             Everything you need to transcribe patient visits and generate
-            clinical notes — running entirely on your Mac.
+            clinical notes, running entirely on your Mac.
           </p>
         </div>
       </section>

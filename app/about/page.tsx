@@ -40,7 +40,7 @@ export default function AboutPage() {
             <p>
               KasaMD is physician-led and born from firsthand experience with
               the documentation burden. We built an offline clinical
-              transcription tool that runs entirely on your Mac — so patient
+              transcription tool that runs entirely on your Mac, so patient
               audio and notes never leave your device, and the app keeps
               working when the internet doesn't.
             </p>
