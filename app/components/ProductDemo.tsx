@@ -7,7 +7,8 @@ export function ProductDemo() {
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-lg text-gray-600">
-            Professional medical documentation at your fingertips.
+            An offline clinical transcription tool that runs entirely on your
+            Mac.
           </p>
         </div>
 

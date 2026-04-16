@@ -10,7 +10,7 @@ export default function AboutPage() {
           <div className="mb-8 flex justify-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2">
               <span className="text-sm font-medium text-emerald-900">
-                Physician-Led Medical Documentation
+                Physician-Led Offline Clinical Transcription
               </span>
             </div>
           </div>
@@ -19,8 +19,8 @@ export default function AboutPage() {
             Accessible healthcare technology
           </h1>
           <p className="mt-6 text-lg text-gray-600">
-            Building medical documentation tools that work anywhere, for anyone,
-            especially where they're needed most.
+            Building an offline clinical transcription tool that works anywhere,
+            for anyone, especially where connectivity is unreliable.
           </p>
         </div>
       </section>
@@ -33,20 +33,21 @@ export default function AboutPage() {
           </h2>
           <div className="mt-6 space-y-4 text-lg text-gray-600">
             <p>
-              Most medical documentation software assumes reliable internet,
-              expensive hardware, and well-funded healthcare systems. But that's
+              Most clinical transcription software assumes reliable internet,
+              cloud processing, and well-funded healthcare systems. But that's
               not reality for millions of healthcare providers worldwide.
             </p>
             <p>
               KasaMD is physician-led and born from firsthand experience with
-              the documentation burden. We believe every healthcare provider
-              deserves professional-grade tools, regardless of where they
-              practice or what resources they have access to.
+              the documentation burden. We built an offline clinical
+              transcription tool that runs entirely on your Mac — so patient
+              audio and notes never leave your device, and the app keeps
+              working when the internet doesn't.
             </p>
             <p>
-              Our goal is to expand access to quality medical documentation
-              tools in underserved regions, starting with areas where cost and
-              infrastructure are barriers to adopting existing solutions.
+              Our goal is to expand access to quality clinical documentation in
+              underserved regions, starting with areas where cost and
+              connectivity are barriers to adopting existing solutions.
             </p>
           </div>
         </div>

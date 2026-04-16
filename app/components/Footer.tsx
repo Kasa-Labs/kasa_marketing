@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <img src="/kasamd_black.png" alt="" className="h-8" />
             <p className="mt-4 text-sm text-gray-600">
-              AI-powered medical documentation for healthcare providers.
+              Offline clinical transcription for healthcare providers.
             </p>
             <p className="mt-4 text-sm text-gray-600">
               Built in USA and Ghana.

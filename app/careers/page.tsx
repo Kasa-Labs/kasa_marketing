@@ -1,17 +1,3 @@
-import Link from "next/link";
-
-const openPositions = [
-  {
-    id: "software-engineering-intern",
-    title: "Software Engineering Intern - Healthcare AI Platform",
-    type: "Internship",
-    location: "Remote",
-    department: "Engineering",
-    description:
-      "Join our founding team to build AI-powered medical documentation for underserved healthcare providers worldwide.",
-  },
-];
-
 export default function CareersPage() {
   return (
     <div className="bg-white">
@@ -43,53 +29,10 @@ export default function CareersPage() {
         <div className="mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-gray-900">Open Positions</h2>
 
-          <div className="mt-8 space-y-4">
-            {openPositions.map((position) => (
-              <Link
-                key={position.id}
-                href={`/careers/${position.id}`}
-                className="block rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md"
-              >
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900">
-                      {position.title}
-                    </h3>
-                    <p className="mt-2 text-base text-gray-600">
-                      {position.description}
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-3">
-                      <span className="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800">
-                        {position.type}
-                      </span>
-                      <span className="inline-flex items-center rounded-full bg-teal-100 px-3 py-1 text-sm font-medium text-teal-800">
-                        {position.location}
-                      </span>
-                      <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">
-                        {position.department}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex items-center text-purple-700">
-                    <span className="text-sm font-semibold">View role</span>
-                    <svg
-                      className="ml-2 h-5 w-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <p className="mt-6 text-base text-gray-600">
+            We don't have any open positions right now. Reach out if our mission
+            resonates — we'd love to hear from you.
+          </p>
         </div>
       </section>
 

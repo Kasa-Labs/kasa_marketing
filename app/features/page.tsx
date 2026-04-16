@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const features = [
   {
-    name: "AI Transcription",
+    name: "Offline AI Transcription",
     description:
-      "Automatically convert speech to text with high accuracy using advanced AI models.",
+      "Convert speech to text with high accuracy using on-device AI models. No internet connection required.",
     icon: (
       <svg
         className="h-12 w-12"
@@ -68,7 +68,7 @@ const features = [
   {
     name: "Advanced Text Editor",
     description:
-      "Medical text editor with rich formatting, templates, and real-time collaboration.",
+      "Medical text editor with rich formatting and templates, built for clinical workflows.",
     icon: (
       <svg
         className="h-12 w-12"
@@ -138,9 +138,10 @@ const kasaFeatures = [
     description: "Create and save your own note templates",
   },
   {
-    feature: "Multi-Device Access",
+    feature: "Fully Offline",
     included: true,
-    description: "Use KasaMD on desktop, tablet, and mobile",
+    description:
+      "Transcription and note generation run entirely on your Mac — no internet required",
   },
 ];
 
@@ -163,7 +164,7 @@ const faqs = [
   {
     question: "How is my data handled?",
     answer:
-      "Audio is processed in real-time for transcription and is not permanently stored on our servers.",
+      "KasaMD runs entirely on your Mac. Audio, transcripts, and notes stay on your device — nothing is sent to our servers.",
   },
   {
     question: "What types of notes can I generate?",
@@ -173,17 +174,22 @@ const faqs = [
   {
     question: "Do I need to download anything?",
     answer:
-      "No, KasaMD is a web-based application. Just sign up and start using it in your browser. No downloads required.",
+      "Yes. KasaMD is a native macOS app — download the .dmg, drag it to Applications, and you're ready to go. No account or sign-up required.",
   },
   {
-    question: "Can I use KasaMD on my phone?",
+    question: "Does KasaMD need an internet connection?",
     answer:
-      "KasaMD is optimized for desktop and tablet devices, where clinical documentation workflows work best. Mobile access is available but we recommend wider screens for the full experience. Native mobile apps are on our roadmap.",
+      "No. KasaMD is fully offline. Transcription and note generation run locally on your Mac, so it works anywhere — clinic, home visits, or low-connectivity environments.",
+  },
+  {
+    question: "What devices does KasaMD support?",
+    answer:
+      "KasaMD runs on Macs with Apple Silicon (M1 or later). Support for other platforms is on our roadmap.",
   },
   {
     question: "How accurate is the AI transcription?",
     answer:
-      "Our AI transcription achieves high accuracy on clear audio. Accuracy depends on audio quality, background noise, and accents. You can always edit and refine notes after generation.",
+      "Our on-device transcription achieves high accuracy on clear audio. Accuracy depends on audio quality, background noise, and accents. You can always edit and refine notes after generation.",
   },
   {
     question: "Can I export my notes?",
@@ -215,11 +221,11 @@ export default function FeaturesPage() {
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Professional medical documentation. Free.
+            Offline clinical transcription. Free.
           </h1>
           <p className="mt-6 text-lg text-gray-600">
-            Everything you need to streamline clinical documentation. No limits,
-            no costs.
+            Everything you need to transcribe patient visits and generate
+            clinical notes — running entirely on your Mac.
           </p>
         </div>
       </section>

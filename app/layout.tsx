@@ -7,17 +7,18 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://kasamd.com"),
   title: {
-    default: "KasaMD - AI Medical Documentation",
+    default: "KasaMD - Offline Clinical Transcription for Mac",
     template: "%s | KasaMD",
   },
   description:
-    "Transform patient conversations into accurate medical documentation. AI-powered clinical notes that understand medicine.",
+    "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes — no internet required.",
   keywords: [
-    "medical documentation",
+    "offline clinical transcription",
+    "offline medical documentation",
     "clinical notes",
-    "AI transcription",
-    "healthcare technology",
-    "medical records",
+    "medical transcription Mac",
+    "offline medical tool",
+    "HIPAA-friendly transcription",
   ],
   authors: [{ name: "KasaMD" }],
   icons: {
@@ -40,15 +41,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://kasamd.com",
     siteName: "KasaMD",
-    title: "KasaMD - AI Medical Documentation",
+    title: "KasaMD - Offline Clinical Transcription for Mac",
     description:
-      "Transform patient conversations into accurate medical documentation. AI-powered clinical notes that understand medicine.",
+      "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes — no internet required.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "KasaMD - AI Medical Documentation",
+    title: "KasaMD - Offline Clinical Transcription for Mac",
     description:
-      "Transform patient conversations into accurate medical documentation.",
+      "Offline clinical transcription for your Mac. No internet required.",
   },
 };
 

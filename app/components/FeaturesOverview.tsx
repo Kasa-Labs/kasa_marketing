@@ -5,8 +5,9 @@ import Link from "next/link";
 
 const features = [
   {
-    name: "AI Transcription",
-    description: "Automatically convert speech to text with high accuracy",
+    name: "Offline AI Transcription",
+    description:
+      "Convert speech to text with high accuracy — fully on-device, no internet needed",
     icon: (
       <svg
         className="h-12 w-12"
@@ -68,7 +69,7 @@ const features = [
   {
     name: "Text Editor",
     description:
-      "Advanced medical text editor with formatting and collaboration tools",
+      "Advanced medical text editor with rich formatting and templates",
     icon: (
       <svg
         className="h-12 w-12"
