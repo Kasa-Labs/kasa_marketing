@@ -31,7 +31,7 @@ export function Hero() {
         {/* Download CTA */}
         <div className="mt-10 flex flex-col items-center justify-center gap-4">
           <a
-            href="https://downloads.kasamd.com/public/KasaMD-0.1.dmg"
+            href="https://downloads.kasamd.com/public/KasaMD.dmg"
             className="inline-flex items-center gap-3 rounded-xl bg-gray-900 px-7 py-3.5 text-white shadow-lg transition-all hover:bg-black hover:shadow-xl"
           >
             <svg

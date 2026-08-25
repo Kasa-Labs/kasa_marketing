@@ -7,7 +7,7 @@ export function AnnouncementBanner() {
             KasaMD for Mac is here →
           </p>
           <a
-            href="https://downloads.kasamd.com/public/KasaMD-0.1.dmg"
+            href="https://downloads.kasamd.com/public/KasaMD.dmg"
             className="ml-1 inline-flex items-center underline text-sm font-semibold text-gray-900 transition-transform sm:text-base"
           >
             Download now
