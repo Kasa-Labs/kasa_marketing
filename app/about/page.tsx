@@ -64,7 +64,7 @@ export default function AboutPage() {
               />
             </div>
             <figcaption className="mt-4 text-center text-sm text-gray-500">
-              Our founders, both practicing physicians.
+              The two physicians who founded KasaMD.
             </figcaption>
           </figure>
         </div>
