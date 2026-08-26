@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -50,6 +51,22 @@ export default function AboutPage() {
               connectivity are barriers to adopting existing solutions.
             </p>
           </div>
+
+          <figure className="mt-10">
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/images/IMG_0787.jpeg"
+                alt="The two physicians who founded KasaMD, standing together in a clinic"
+                width={2491}
+                height={2669}
+                sizes="(min-width: 768px) 48rem, 100vw"
+                className="h-auto w-full object-cover"
+              />
+            </div>
+            <figcaption className="mt-4 text-base text-gray-500">
+              Founded by two physicians.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -148,10 +165,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900">The team</h2>
           <p className="mt-6 text-lg text-gray-600">
-            KasaMD is physician-led and built by a small team passionate about
-            health equity and accessible technology. We combine clinical
-            expertise with technical innovation to create tools that genuinely
-            serve healthcare providers.
+            KasaMD is built by a small team passionate about health equity and
+            accessible technology. We combine clinical expertise with technical
+            innovation to create tools that genuinely serve healthcare
+            providers.
           </p>
         </div>
       </section>
