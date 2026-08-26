@@ -41,7 +41,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-2xl shadow-xl ring-1 shadow-gray-900/15 ring-gray-900/5">
               <Image
                 src="/images/IMG_0787.jpeg"
-                alt="The two physicians who founded KasaMD, standing together in front of a painted mural"
+                alt="KasaMD co-founders standing together in front of a painted mural"
                 width={2491}
                 height={2669}
                 sizes="(min-width: 640px) 24rem, 100vw"
@@ -49,7 +49,7 @@ export default function AboutPage() {
               />
             </div>
             <figcaption className="mt-4 text-center text-sm text-gray-500">
-              The two physicians who founded KasaMD.
+              Our founders: physicians first, builders second.
             </figcaption>
           </figure>
         </div>
