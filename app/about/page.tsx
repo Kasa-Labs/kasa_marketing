@@ -32,25 +32,6 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900">
             Why we're building KasaMD
           </h2>
-          <figure className="mx-auto mt-8 max-w-sm">
-            <div className="overflow-hidden rounded-2xl shadow-sm">
-              <Image
-                src="/images/IMG_0787.jpeg"
-                alt="The two physicians who founded KasaMD, standing together in front of a painted mural"
-                width={2491}
-                height={2669}
-                sizes="(min-width: 640px) 24rem, 100vw"
-                className="h-auto w-full object-cover"
-              />
-            </div>
-            <figcaption className="mt-4 text-center text-sm text-gray-500">
-              KasaMD was founded by two physicians who met practicing medicine
-              and kept running into the same problem: documentation tools that
-              assume a fast connection and a well-funded clinic. They built the
-              tool they wanted on shift, and they still see patients with it.
-            </figcaption>
-          </figure>
-
           <div className="mt-6 space-y-4 text-lg text-gray-600">
             <p>
               Most clinical transcription software assumes reliable internet,
@@ -70,6 +51,22 @@ export default function AboutPage() {
               connectivity are barriers to adopting existing solutions.
             </p>
           </div>
+
+          <figure className="mx-auto mt-12 max-w-sm">
+            <div className="overflow-hidden rounded-2xl shadow-xl ring-1 shadow-gray-900/15 ring-gray-900/5">
+              <Image
+                src="/images/IMG_0787.jpeg"
+                alt="The two physicians who founded KasaMD, standing together in front of a painted mural"
+                width={2491}
+                height={2669}
+                sizes="(min-width: 640px) 24rem, 100vw"
+                className="h-auto w-full object-cover"
+              />
+            </div>
+            <figcaption className="mt-4 text-center text-sm text-gray-500">
+              Our founders, both practicing physicians.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
