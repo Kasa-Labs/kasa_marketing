@@ -184,7 +184,7 @@ const faqs = [
   {
     question: "What devices does KasaMD support?",
     answer:
-      "KasaMD runs on Macs with Apple Silicon (M1 or later). Support for other platforms is on our roadmap.",
+      "KasaMD runs on Macs with Apple Silicon (M1 or later) and macOS 14 Sonoma or later. Support for other platforms is on our roadmap.",
   },
   {
     question: "How accurate is the AI transcription?",

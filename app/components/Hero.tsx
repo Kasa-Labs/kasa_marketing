@@ -46,7 +46,7 @@ export function Hero() {
                 Download for Mac
               </span>
               <span className="text-xs text-gray-400">
-                Apple Silicon (M1 or later)
+                Apple Silicon (M1 or later) &middot; macOS 14+
               </span>
             </div>
           </a>
