@@ -48,6 +48,19 @@ const principles = [
   },
 ];
 
+const founders = [
+  {
+    name: "Emmanuel",
+    role: "Co-founder",
+    photo: "/images/emmanuel.jpg",
+  },
+  {
+    name: "Frank",
+    role: "Co-founder & Developer",
+    photo: null,
+  },
+];
+
 export default function AboutPage() {
   return (
     <div className="bg-white">
@@ -71,12 +84,12 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="overflow-x-clip px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
             <span className="eyebrow">The team</span>
             <h2 className="display mt-6 text-4xl sm:text-5xl">
-              Built by clinicians, for clinicians.
+              Meet the founders
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted">
               KasaMD is built by a small team passionate about health equity and
@@ -86,24 +99,39 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <figure className="mx-auto w-full max-w-md">
-            <div className="relative isolate">
-              <div className="absolute -inset-4 -z-10 rotate-2 rounded-[2rem] bg-brand-100" />
-              <div className="overflow-hidden rounded-3xl shadow-2xl ring-1 shadow-brand-900/20 ring-brand-900/5">
-                <Image
-                  src="/images/IMG_0787.jpeg"
-                  alt="KasaMD co-founders standing together in front of a painted mural"
-                  width={2491}
-                  height={2669}
-                  sizes="(min-width: 640px) 28rem, 100vw"
-                  className="h-auto w-full object-cover"
-                />
-              </div>
-            </div>
-            <figcaption className="mt-8 text-center text-sm text-muted">
-              Our founders: physicians first, builders second.
-            </figcaption>
-          </figure>
+          <ul className="grid grid-cols-2 gap-4 sm:gap-6">
+            {founders.map((founder) => (
+              <li key={founder.name}>
+                <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-brand-900 shadow-xl ring-1 shadow-brand-900/15 ring-brand-900/5">
+                  {founder.photo ? (
+                    <Image
+                      src={founder.photo}
+                      alt={`Portrait of ${founder.name}, KasaMD ${founder.role.toLowerCase()}`}
+                      width={1080}
+                      height={1312}
+                      sizes="(min-width: 1024px) 18rem, 50vw"
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <>
+                      <div className="pointer-events-none absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-brand-600/30 blur-3xl" />
+                      <div className="bg-grid pointer-events-none absolute inset-0 opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
+                      <span
+                        aria-hidden="true"
+                        className="absolute inset-0 flex items-center justify-center font-gtsuper text-7xl text-brand-100 sm:text-8xl"
+                      >
+                        {founder.name[0]}
+                      </span>
+                    </>
+                  )}
+                </div>
+                <p className="mt-4 text-lg font-semibold text-brand-900">
+                  {founder.name}
+                </p>
+                <p className="text-sm text-muted">{founder.role}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
