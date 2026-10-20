@@ -1,101 +1,52 @@
-import Link from "next/link";
+import {
+  SignalSlashIcon,
+  DocumentTextIcon,
+  UserGroupIcon,
+  ClockIcon,
+  PencilSquareIcon,
+  RectangleStackIcon,
+  CheckIcon,
+  PlusIcon,
+} from "@heroicons/react/24/outline";
+import { CtaSection } from "@/components/CtaSection";
+import { DownloadButton } from "@/components/DownloadButton";
 
 const features = [
   {
     name: "Offline AI Transcription",
     description:
       "Convert speech to text with high accuracy using on-device AI models. No internet connection required.",
-    icon: (
-      <svg
-        className="h-12 w-12"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle cx="20" cy="15" r="12" fill="#14b8a6" />
-        <rect x="14" y="20" width="12" height="12" rx="2" fill="#8b5cf6" />
-      </svg>
-    ),
+    icon: SignalSlashIcon,
   },
   {
     name: "Clinical Documentation",
     description:
       "Generate comprehensive, professional clinical notes from your patient conversations in seconds.",
-    icon: (
-      <svg
-        className="h-12 w-12"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="10" y="10" width="14" height="14" rx="2" fill="#14b8a6" />
-        <rect x="16" y="16" width="14" height="14" rx="2" fill="#8b5cf6" />
-      </svg>
-    ),
+    icon: DocumentTextIcon,
   },
   {
     name: "Patient Management",
     description:
       "Efficiently organize and access patient information with an intuitive interface.",
-    icon: (
-      <svg
-        className="h-12 w-12"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle cx="15" cy="15" r="10" fill="#14b8a6" />
-        <circle cx="25" cy="25" r="10" fill="#8b5cf6" />
-      </svg>
-    ),
+    icon: UserGroupIcon,
   },
   {
     name: "Session Management",
     description:
       "Track and organize each transcription session seamlessly with automatic saving.",
-    icon: (
-      <svg
-        className="h-12 w-12"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="8" y="12" width="16" height="16" rx="3" fill="#14b8a6" />
-        <circle cx="28" cy="20" r="8" fill="#8b5cf6" />
-      </svg>
-    ),
+    icon: ClockIcon,
   },
   {
     name: "Advanced Text Editor",
     description:
       "Medical text editor with rich formatting and templates, built for clinical workflows.",
-    icon: (
-      <svg
-        className="h-12 w-12"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M20 8 L32 20 L20 32 L8 20 Z" fill="#14b8a6" />
-        <circle cx="20" cy="20" r="6" fill="#8b5cf6" />
-      </svg>
-    ),
+    icon: PencilSquareIcon,
   },
   {
     name: "Unlimited Templates",
     description:
       "Access all note templates including SOAP, HPI, and specialty formats with no restrictions.",
-    icon: (
-      <svg
-        className="h-12 w-12"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="8" y="10" width="16" height="20" rx="2" fill="#14b8a6" />
-        <rect x="16" y="12" width="16" height="20" rx="2" fill="#8b5cf6" />
-      </svg>
-    ),
+    icon: RectangleStackIcon,
   },
 ];
 
@@ -198,32 +149,19 @@ const faqs = [
   },
 ];
 
-function CheckIcon() {
-  return (
-    <svg
-      className="h-5 w-5 text-teal-500"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-    >
-      <path
-        fillRule="evenodd"
-        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-        clipRule="evenodd"
-      />
-    </svg>
-  );
-}
-
 export default function FeaturesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Offline clinical transcription. Free.
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white px-4 pt-20 pb-12 sm:px-6 sm:pt-28 lg:px-8">
+        <div className="bg-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black_20%,transparent_70%)]" />
+        <div className="relative mx-auto max-w-4xl text-center">
+          <span className="eyebrow">Features</span>
+          <h1 className="display mt-8 text-5xl leading-[1.05] sm:text-6xl">
+            Offline clinical transcription.{" "}
+            <span className="text-brand-600">Free.</span>
           </h1>
-          <p className="mt-6 text-lg text-gray-600">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
             Everything you need to transcribe patient visits and generate
             clinical notes, running entirely on your Mac.
           </p>
@@ -232,123 +170,133 @@ export default function FeaturesPage() {
 
       {/* Features Grid */}
       <section className="px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
-              <div
-                key={feature.name}
-                className="flex flex-col items-center text-center"
-              >
-                <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-xl bg-gray-50">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900">
-                  {feature.name}
-                </h3>
-                <p className="mt-3 text-base text-gray-600">
-                  {feature.description}
-                </p>
+        <div className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature) => (
+            <div
+              key={feature.name}
+              className="group rounded-3xl border border-brand-900/10 bg-white p-8 transition-all hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lg hover:shadow-brand-900/5"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-900 transition-colors group-hover:bg-brand-900 group-hover:text-brand-100">
+                <feature.icon className="h-6 w-6" />
               </div>
-            ))}
-          </div>
+              <h3 className="mt-6 text-xl font-semibold text-brand-900">
+                {feature.name}
+              </h3>
+              <p className="mt-2 text-base text-muted">{feature.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* What's Included Table */}
-      <section className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-8" id="pricing">
-        <div className="mx-auto max-w-4xl">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              What's included
+      {/* Pricing */}
+      <section
+        className="scroll-mt-20 bg-brand-50 px-4 py-24 sm:px-6 sm:py-32 lg:px-8"
+        id="pricing"
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow bg-white">Pricing</span>
+            <h2 className="display mt-6 text-4xl sm:text-5xl">
+              What&apos;s included
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-muted">
               Everything you need, with no limits
             </p>
           </div>
 
-          <div className="mt-12 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
-            <table className="w-full">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">
-                    Feature
-                  </th>
-                  <th className="pl-6 py-4 text-center text-sm font-semibold font-gtsuper text-teal-600">
-                    <img src="/kasamd_black.png" alt="" className="pl-4 h-4" />
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                {kasaFeatures.map((item, idx) => (
-                  <tr
-                    key={idx}
-                    className={idx % 2 === 0 ? "bg-white" : "bg-gray-50/50"}
-                  >
-                    <td className="px-6 py-4">
-                      <div className="text-sm font-medium text-gray-900">
-                        {item.feature}
-                      </div>
-                      <div className="mt-1 text-sm text-gray-500">
-                        {item.description}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="flex justify-center">
-                        {item.included && <CheckIcon />}
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <div className="mt-14 overflow-hidden rounded-3xl border border-brand-900/10 bg-white shadow-xl shadow-brand-900/5 lg:grid lg:grid-cols-5">
+            {/* Plan summary */}
+            <div className="relative overflow-hidden bg-brand-900 p-8 sm:p-10 lg:col-span-2">
+              <div className="pointer-events-none absolute -right-20 -bottom-20 h-64 w-64 rounded-full bg-brand-600/30 blur-3xl" />
+              <div className="relative">
+                <img
+                  src="/kasamd_green.png"
+                  alt="KasaMD"
+                  className="h-7 brightness-0 invert"
+                />
+                <p className="mt-8 flex items-baseline gap-2">
+                  <span className="font-gtsuper text-6xl text-white">$0</span>
+                  <span className="text-brand-200">everything included</span>
+                </p>
+                <p className="mt-4 text-base text-brand-200">
+                  All features included. No credit card required. No hidden
+                  fees.
+                </p>
+                <div className="mt-8">
+                  <DownloadButton variant="light" />
+                </div>
+              </div>
+            </div>
 
-          <div className="mt-8 text-center">
-            <p className="text-sm text-gray-600">
-              All features included. No credit card required. No hidden fees.
-            </p>
+            {/* Included list */}
+            <ul className="grid gap-x-8 gap-y-6 p-8 sm:grid-cols-2 sm:p-10 lg:col-span-3">
+              {kasaFeatures.map((item) => (
+                <li key={item.feature} className="flex gap-3">
+                  {item.included && (
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100">
+                      <CheckIcon
+                        className="h-4 w-4 text-brand-600"
+                        strokeWidth={2.5}
+                      />
+                    </span>
+                  )}
+                  <div>
+                    <p className="text-sm font-semibold text-brand-900">
+                      {item.feature}
+                    </p>
+                    <p className="mt-1 text-sm text-muted">
+                      {item.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="px-4 py-20 sm:px-6 lg:px-8" id="faq">
-        <div className="mx-auto max-w-3xl">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <section
+        className="scroll-mt-20 px-4 py-24 sm:px-6 sm:py-32 lg:px-8"
+        id="faq"
+      >
+        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-3">
+          <div>
+            <span className="eyebrow">FAQ</span>
+            <h2 className="display mt-6 text-4xl sm:text-5xl">
               Frequently asked questions
             </h2>
+            <p className="mt-4 text-base text-muted">
+              Can&apos;t find what you&apos;re looking for?{" "}
+              <a
+                href="mailto:hello@kasamd.com"
+                className="font-semibold text-brand-900 underline decoration-brand-300 underline-offset-4 hover:decoration-brand-900"
+              >
+                Email us
+              </a>
+              .
+            </p>
           </div>
 
-          <dl className="mt-12 space-y-8">
-            {faqs.map((faq, idx) => (
-              <div key={idx} className="border-b border-gray-200 pb-8">
-                <dt className="text-lg font-semibold text-gray-900">
+          <div className="divide-y divide-brand-900/10 border-y border-brand-900/10 lg:col-span-2">
+            {faqs.map((faq) => (
+              <details key={faq.question} className="group py-2">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-4 text-left text-lg font-semibold text-brand-900 [&::-webkit-details-marker]:hidden">
                   {faq.question}
-                </dt>
-                <dd className="mt-3 text-base text-gray-600">{faq.answer}</dd>
-              </div>
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-900 transition-transform duration-200 group-open:rotate-45 group-open:bg-brand-900 group-open:text-white">
+                    <PlusIcon className="h-4 w-4" strokeWidth={2} />
+                  </span>
+                </summary>
+                <p className="pr-14 pb-4 text-base leading-relaxed text-muted">
+                  {faq.answer}
+                </p>
+              </details>
             ))}
-          </dl>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-gradient-to-t from-violet-50 via-teal-50/30 to-transparent px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Ready to get started?
-          </h2>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/"
-              className="rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600"
-            >
-              Download
-            </Link>
           </div>
         </div>
       </section>
+
+      <CtaSection title="Ready to get started?" />
     </div>
   );
 }

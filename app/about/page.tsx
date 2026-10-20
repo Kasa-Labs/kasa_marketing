@@ -1,25 +1,69 @@
 import Image from "next/image";
-import Link from "next/link";
+import {
+  HeartIcon,
+  LockOpenIcon,
+  SignalSlashIcon,
+  ArrowPathIcon,
+  GlobeAltIcon,
+  SparklesIcon,
+} from "@heroicons/react/24/outline";
+import { CtaSection } from "@/components/CtaSection";
+
+const principles = [
+  {
+    icon: HeartIcon,
+    title: "Physician-led",
+    description:
+      "Built by healthcare providers who understand clinical workflows and the realities of patient care.",
+  },
+  {
+    icon: LockOpenIcon,
+    title: "Open access",
+    description:
+      "No credit cards, no paywalls to get started. We believe in removing barriers to quality documentation tools.",
+  },
+  {
+    icon: SignalSlashIcon,
+    title: "Designed for accessibility",
+    description:
+      "Building with reliability and offline functionality in mind to serve providers in diverse settings.",
+  },
+  {
+    icon: ArrowPathIcon,
+    title: "End-to-end workflow",
+    description:
+      "From recording to finished note in one seamless flow. Transcription, editing, and export without switching tools.",
+  },
+  {
+    icon: GlobeAltIcon,
+    title: "Health equity",
+    description:
+      "Focused on expanding healthcare access through technology that serves underserved regions.",
+  },
+  {
+    icon: SparklesIcon,
+    title: "No compromises",
+    description:
+      "Professional-grade features from day one, not watered-down versions for limited markets.",
+  },
+];
 
 export default function AboutPage() {
   return (
     <div className="bg-white">
-      <section className="relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-purple-50 to-blue-50" />
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white px-4 pt-20 pb-12 sm:px-6 sm:pt-28 lg:px-8">
+        <div className="bg-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black_20%,transparent_70%)]" />
 
         <div className="relative mx-auto max-w-4xl text-center">
-          <div className="mb-8 flex justify-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2">
-              <span className="text-sm font-medium text-emerald-900">
-                Physician-Led Offline Clinical Transcription
-              </span>
-            </div>
-          </div>
+          <span className="eyebrow">
+            Physician-Led Offline Clinical Transcription
+          </span>
 
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Accessible healthcare technology
+          <h1 className="display mt-8 text-5xl leading-[1.05] sm:text-6xl">
+            Accessible healthcare{" "}
+            <span className="text-brand-600">technology</span>
           </h1>
-          <p className="mt-6 text-lg text-gray-600">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
             Building an offline clinical transcription tool that works anywhere,
             for anyone, especially where connectivity is unreliable.
           </p>
@@ -27,170 +71,134 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900">The team</h2>
-          <p className="mt-6 text-lg text-gray-600">
-            KasaMD is built by a small team passionate about health equity and
-            accessible technology. We combine clinical expertise with technical
-            innovation to create tools that genuinely serve healthcare
-            providers.
-          </p>
+      <section className="overflow-x-clip px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          <div>
+            <span className="eyebrow">The team</span>
+            <h2 className="display mt-6 text-4xl sm:text-5xl">
+              Built by clinicians, for clinicians.
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-muted">
+              KasaMD is built by a small team passionate about health equity and
+              accessible technology. We combine clinical expertise with
+              technical innovation to create tools that genuinely serve
+              healthcare providers.
+            </p>
+          </div>
 
-          <figure className="mx-auto mt-12 max-w-sm">
-            <div className="overflow-hidden rounded-2xl shadow-xl ring-1 shadow-gray-900/15 ring-gray-900/5">
-              <Image
-                src="/images/IMG_0787.jpeg"
-                alt="KasaMD co-founders standing together in front of a painted mural"
-                width={2491}
-                height={2669}
-                sizes="(min-width: 640px) 24rem, 100vw"
-                className="h-auto w-full object-cover"
-              />
+          <figure className="mx-auto w-full max-w-md">
+            <div className="relative isolate">
+              <div className="absolute -inset-4 -z-10 rotate-2 rounded-[2rem] bg-brand-100" />
+              <div className="overflow-hidden rounded-3xl shadow-2xl ring-1 shadow-brand-900/20 ring-brand-900/5">
+                <Image
+                  src="/images/IMG_0787.jpeg"
+                  alt="KasaMD co-founders standing together in front of a painted mural"
+                  width={2491}
+                  height={2669}
+                  sizes="(min-width: 640px) 28rem, 100vw"
+                  className="h-auto w-full object-cover"
+                />
+              </div>
             </div>
-            <figcaption className="mt-4 text-center text-sm text-gray-500">
+            <figcaption className="mt-8 text-center text-sm text-muted">
               Our founders: physicians first, builders second.
             </figcaption>
           </figure>
         </div>
       </section>
 
-      {/* Mission/Story Section */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Why we're building KasaMD
-          </h2>
-          <div className="mt-6 space-y-4 text-lg text-gray-600">
-            <p>
-              Most clinical transcription software assumes reliable internet,
-              cloud processing, and well-funded healthcare systems. But that's
-              not reality for millions of healthcare providers worldwide.
-            </p>
-            <p>
-              KasaMD is physician-led and born from firsthand experience with
-              the documentation burden. We built an offline clinical
-              transcription tool that runs entirely on your Mac, so patient
-              audio and notes never leave your device, and the app keeps
-              working when the internet doesn't.
-            </p>
-            <p>
-              Our goal is to expand access to quality clinical documentation in
-              underserved regions, starting with areas where cost and
-              connectivity are barriers to adopting existing solutions.
-            </p>
+      {/* Mission + Story */}
+      <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
+          <div className="rounded-3xl border border-brand-900/10 bg-white p-8 sm:p-10">
+            <h2 className="display text-3xl sm:text-4xl">
+              Why we&apos;re building KasaMD
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
+              <p>
+                Most clinical transcription software assumes reliable internet,
+                cloud processing, and well-funded healthcare systems. But
+                that&apos;s not reality for millions of healthcare providers
+                worldwide.
+              </p>
+              <p>
+                KasaMD is physician-led and born from firsthand experience with
+                the documentation burden. We built an offline clinical
+                transcription tool that runs entirely on your Mac, so patient
+                audio and notes never leave your device, and the app keeps
+                working when the internet doesn&apos;t.
+              </p>
+              <p>
+                Our goal is to expand access to quality clinical documentation
+                in underserved regions, starting with areas where cost and
+                connectivity are barriers to adopting existing solutions.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* Our Story Section */}
-      <section className="bg-gradient-to-r from-emerald-50 to-teal-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900">Our story</h2>
-          <div className="mt-6 space-y-4 text-lg text-gray-600">
-            <p>
-              In many parts of the world, clinics rely on paper records or
-              fragmented systems that don't fit local workflows. High patient
-              volumes, shared devices, and intermittent connectivity make most
-              existing documentation solutions impractical.
-            </p>
-            <p>
-              We're piloting KasaMD with physicians in West Africa to build
-              tools that work in real clinical environments. Their feedback
-              shapes everything we build, from offline-first architecture to
-              workflows designed for how care is actually delivered.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-3xl font-bold text-gray-900">
-            Our principles
-          </h2>
-
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Physician-led
-              </h3>
-              <p className="mt-3 text-base text-gray-600">
-                Built by healthcare providers who understand clinical workflows
-                and the realities of patient care.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Open access
-              </h3>
-              <p className="mt-3 text-base text-gray-600">
-                No credit cards, no paywalls to get started. We believe in
-                removing barriers to quality documentation tools.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Designed for accessibility
-              </h3>
-              <p className="mt-3 text-base text-gray-600">
-                Building with reliability and offline functionality in mind to
-                serve providers in diverse settings.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900">
-                End-to-end workflow
-              </h3>
-              <p className="mt-3 text-base text-gray-600">
-                From recording to finished note in one seamless flow.
-                Transcription, editing, and export without switching tools.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Health equity
-              </h3>
-              <p className="mt-3 text-base text-gray-600">
-                Focused on expanding healthcare access through technology that
-                serves underserved regions.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900">
-                No compromises
-              </h3>
-              <p className="mt-3 text-base text-gray-600">
-                Professional-grade features from day one, not watered-down
-                versions for limited markets.
-              </p>
+          <div className="relative overflow-hidden rounded-3xl bg-brand-900 p-8 sm:p-10">
+            <div className="pointer-events-none absolute -right-24 -bottom-24 h-72 w-72 rounded-full bg-brand-600/30 blur-3xl" />
+            <div className="relative">
+              <h2 className="font-gtsuper text-3xl tracking-tight text-white sm:text-4xl">
+                Our story
+              </h2>
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-brand-200">
+                <p>
+                  In many parts of the world, clinics rely on paper records or
+                  fragmented systems that don&apos;t fit local workflows. High
+                  patient volumes, shared devices, and intermittent connectivity
+                  make most existing documentation solutions impractical.
+                </p>
+                <p>
+                  We&apos;re piloting KasaMD with physicians in West Africa to
+                  build tools that work in real clinical environments. Their
+                  feedback shapes everything we build, from offline-first
+                  architecture to workflows designed for how care is actually
+                  delivered.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gradient-to-t from-violet-50 via-teal-50/30 to-transparent px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Join us in making healthcare documentation accessible
-          </h2>
+      {/* Principles */}
+      <section className="bg-brand-50 px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow bg-white">What guides us</span>
+            <h2 className="display mt-6 text-4xl sm:text-5xl">
+              Our principles
+            </h2>
+          </div>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/"
-              className="rounded-lg bg-purple-700 px-8 py-3.5 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-purple-600"
-            >
-              Download
-            </Link>
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {principles.map((principle) => (
+              <div
+                key={principle.title}
+                className="rounded-3xl border border-brand-900/10 bg-white p-8"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-100 text-brand-900">
+                  <principle.icon className="h-6 w-6" />
+                </div>
+                <h3 className="mt-6 text-xl font-semibold text-brand-900">
+                  {principle.title}
+                </h3>
+                <p className="mt-2 text-base text-muted">
+                  {principle.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      <div className="pt-20">
+        <CtaSection
+          title="Join us in making healthcare documentation accessible"
+          description="Download KasaMD for free and tell us what to build next."
+        />
+      </div>
     </div>
   );
 }

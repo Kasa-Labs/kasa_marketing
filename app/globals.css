@@ -6,7 +6,12 @@
   }
 
   body {
-    @apply text-gray-900;
+    @apply bg-white font-fakt text-brand-900;
+    font-feature-settings: "ss01";
+  }
+
+  ::selection {
+    @apply bg-brand-100 text-brand-900;
   }
 }
 
@@ -173,10 +178,39 @@
   --color-bsolid: #bbcdc7;
   --color-ring: #b1d9cb;
 
+  /* Brand scale (derived from the green theme above) */
+  --color-brand-950: #12291f;
+  --color-brand-900: #1d4034;
+  --color-brand-800: #2a5546;
+  --color-brand-600: #16a368;
+  --color-brand-500: #1bc47a;
+  --color-brand-300: #bbcdc7;
+  --color-brand-200: #b1d9cb;
+  --color-brand-100: #e3f3ec;
+  --color-brand-50: #f3f8f6;
+  --color-muted: #616f6b;
+
   /* Font */
   --font-fakt: "FaktPro", sans-serif;
   --font-ddn: "DDN", sans-serif;
   --font-dd: "DD", sans-serif;
   --font-gtsuper: "GTSuper", sans-serif;
   --font-caslon: "Caslon", sans-serif;
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-semibold tracking-wide text-brand-900 uppercase;
+  }
+
+  .display {
+    @apply font-gtsuper font-normal tracking-tight text-brand-900;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(29 64 52 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(29 64 52 / 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
 }
