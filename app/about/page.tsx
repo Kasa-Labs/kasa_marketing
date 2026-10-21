@@ -50,7 +50,7 @@ const principles = [
 
 const founder = {
   name: "Emmanuel",
-  role: "Co-founder",
+  role: "Founder & CEO",
   photo: "/images/emmanuel.jpg",
 };
 
@@ -96,7 +96,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 shadow-brand-900/15 ring-brand-900/5">
               <Image
                 src={founder.photo}
-                alt={`Portrait of ${founder.name}, KasaMD ${founder.role.toLowerCase()}`}
+                alt={`Portrait of ${founder.name}, ${founder.role} of KasaMD`}
                 width={1080}
                 height={1312}
                 sizes="(min-width: 640px) 24rem, 100vw"
