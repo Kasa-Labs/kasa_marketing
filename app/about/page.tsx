@@ -48,18 +48,11 @@ const principles = [
   },
 ];
 
-const founders = [
-  {
-    name: "Emmanuel",
-    role: "Co-founder",
-    photo: "/images/emmanuel.jpg",
-  },
-  {
-    name: "Frank",
-    role: "Co-founder & Developer",
-    photo: null,
-  },
-];
+const founder = {
+  name: "Emmanuel",
+  role: "Co-founder",
+  photo: "/images/emmanuel.jpg",
+};
 
 export default function AboutPage() {
   return (
@@ -89,7 +82,7 @@ export default function AboutPage() {
           <div>
             <span className="eyebrow">The team</span>
             <h2 className="display mt-6 text-4xl sm:text-5xl">
-              Meet the founders
+              Who&apos;s building KasaMD
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted">
               KasaMD is built by a small team passionate about health equity and
@@ -99,39 +92,24 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <ul className="grid grid-cols-2 gap-4 sm:gap-6">
-            {founders.map((founder) => (
-              <li key={founder.name}>
-                <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-brand-900 shadow-xl ring-1 shadow-brand-900/15 ring-brand-900/5">
-                  {founder.photo ? (
-                    <Image
-                      src={founder.photo}
-                      alt={`Portrait of ${founder.name}, KasaMD ${founder.role.toLowerCase()}`}
-                      width={1080}
-                      height={1312}
-                      sizes="(min-width: 1024px) 18rem, 50vw"
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <>
-                      <div className="pointer-events-none absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-brand-600/30 blur-3xl" />
-                      <div className="bg-grid pointer-events-none absolute inset-0 opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
-                      <span
-                        aria-hidden="true"
-                        className="absolute inset-0 flex items-center justify-center font-gtsuper text-7xl text-brand-100 sm:text-8xl"
-                      >
-                        {founder.name[0]}
-                      </span>
-                    </>
-                  )}
-                </div>
-                <p className="mt-4 text-lg font-semibold text-brand-900">
-                  {founder.name}
-                </p>
-                <p className="text-sm text-muted">{founder.role}</p>
-              </li>
-            ))}
-          </ul>
+          <figure className="mx-auto w-full max-w-sm">
+            <div className="overflow-hidden rounded-3xl shadow-xl ring-1 shadow-brand-900/15 ring-brand-900/5">
+              <Image
+                src={founder.photo}
+                alt={`Portrait of ${founder.name}, KasaMD ${founder.role.toLowerCase()}`}
+                width={1080}
+                height={1312}
+                sizes="(min-width: 640px) 24rem, 100vw"
+                className="aspect-[4/5] h-full w-full object-cover"
+              />
+            </div>
+            <figcaption className="mt-4">
+              <p className="text-lg font-semibold text-brand-900">
+                {founder.name}
+              </p>
+              <p className="text-sm text-muted">{founder.role}</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
