@@ -1,4 +1,4 @@
-export const DOWNLOAD_URL = "https://downloads.kasamd.com/public/KasaMD.dmg";
+export const DOWNLOAD_URL = "https://downloads.kasamd.com/download";
 
 export function AppleIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
