@@ -76,43 +76,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          <div>
-            <span className="eyebrow">The team</span>
-            <h2 className="display mt-6 text-4xl sm:text-5xl">
-              Who&apos;s building KasaMD
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-muted">
-              KasaMD is built by a small team passionate about health equity and
-              accessible technology. We combine clinical expertise with
-              technical innovation to create tools that genuinely serve
-              healthcare providers.
-            </p>
-          </div>
-
-          <figure className="mx-auto w-full max-w-sm">
-            <div className="overflow-hidden rounded-3xl shadow-xl ring-1 shadow-brand-900/15 ring-brand-900/5">
-              <Image
-                src={founder.photo}
-                alt={`Portrait of ${founder.name}, ${founder.role} of KasaMD`}
-                width={1080}
-                height={1312}
-                sizes="(min-width: 640px) 24rem, 100vw"
-                className="aspect-[4/5] h-full w-full object-cover"
-              />
-            </div>
-            <figcaption className="mt-4">
-              <p className="text-lg font-semibold text-brand-900">
-                {founder.name}
-              </p>
-              <p className="text-sm text-muted">{founder.role}</p>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
       {/* Mission + Story */}
       <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
@@ -199,7 +162,42 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="pt-20">
+      {/* Team */}
+      <section className="px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="eyebrow">The team</span>
+          <h2 className="display mt-6 text-4xl sm:text-5xl">
+            Who&apos;s building KasaMD
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-muted">
+            KasaMD is built by a small team passionate about health equity and
+            accessible technology. We combine clinical expertise with technical
+            innovation to create tools that genuinely serve healthcare
+            providers.
+          </p>
+
+          <figure className="mx-auto mt-14 w-48">
+            <div className="overflow-hidden rounded-2xl ring-1 ring-brand-900/10">
+              <Image
+                src={founder.photo}
+                alt={`Portrait of ${founder.name}, ${founder.role} of KasaMD`}
+                width={1080}
+                height={1312}
+                sizes="12rem"
+                className="aspect-square h-full w-full object-cover object-top"
+              />
+            </div>
+            <figcaption className="mt-4">
+              <p className="text-base font-semibold text-brand-900">
+                {founder.name}
+              </p>
+              <p className="text-sm text-muted">{founder.role}</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div className="pt-4">
         <CtaSection
           title="Join us in making healthcare documentation accessible"
           description="Download KasaMD for free and tell us what to build next."
