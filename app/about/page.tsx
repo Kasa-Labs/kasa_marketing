@@ -49,7 +49,7 @@ const principles = [
 ];
 
 const founder = {
-  name: "Emmanuel Adomfeh",
+  name: "Dr. Emmanuel Adomfeh",
   role: "Founder & CEO",
   photo: "/images/emmanuel.jpg",
 };
