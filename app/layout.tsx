@@ -3,6 +3,7 @@ import "./globals.css";
 import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { ReferrerTracker } from "@/components/ReferrerTracker";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kasamd.com"),
@@ -65,6 +66,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <ReferrerTracker />
       </body>
     </html>
   );

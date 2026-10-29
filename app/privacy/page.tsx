@@ -11,7 +11,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-sm text-muted mb-10 text-center">
-            Last updated: March 28, 2026
+            Last updated: October 28, 2026
           </p>
 
           <section className="mb-10">
@@ -108,6 +108,11 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-6 space-y-2 text-brand-900/80">
               <li>
                 Standard web analytics data such as page visits and device type
+              </li>
+              <li>
+                When you download the Mac app: your IP address, approximate
+                location (country, region, city) and network provider, browser,
+                and the page you came from
               </li>
             </ul>
           </section>
