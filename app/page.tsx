@@ -3,7 +3,6 @@ import { AgentSteps } from "@/components/AgentSteps";
 import { CtaSection } from "@/components/CtaSection";
 import { FreeToolsGrid } from "@/components/FreeToolsGrid";
 import { HomeHero } from "@/components/HomeHero";
-import { PatientPath } from "@/components/PatientPath";
 import { RequestInviteButton } from "@/components/RequestInvite";
 import { TrustSection } from "@/components/TrustSection";
 import { WorkflowsByMoment } from "@/components/WorkflowsByMoment";
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <>
       <HomeHero />
-      <PatientPath />
       <WorkflowsByMoment />
       <AgentSteps />
       <TrustSection />

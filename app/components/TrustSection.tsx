@@ -1,6 +1,5 @@
 import {
   ClipboardDocumentListIcon,
-  ComputerDesktopIcon,
   CpuChipIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
@@ -24,12 +23,6 @@ const points = [
     description:
       "KasaMD has no back-office staff working in your records. The only people in the loop are your own.",
   },
-  {
-    icon: ComputerDesktopIcon,
-    title: "Notes stay on your Mac",
-    description:
-      "Notes for Mac transcribes and writes notes on-device. Audio never leaves your Mac.",
-  },
 ];
 
 export function TrustSection() {
@@ -49,7 +42,7 @@ export function TrustSection() {
           </p>
         </div>
 
-        <ul className="grid gap-4 sm:grid-cols-2 lg:col-span-3">
+        <ul className="grid gap-4 lg:col-span-3">
           {points.map((point) => (
             <li
               key={point.title}

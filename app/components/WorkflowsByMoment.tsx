@@ -1,7 +1,3 @@
-import Link from "next/link";
-import { CheckIcon, ShieldCheckIcon } from "@heroicons/react/20/solid";
-import { DownloadButton } from "@/components/DownloadButton";
-import { notesForMac } from "@/content/tools";
 import { moments, workflows, type Workflow } from "@/content/workflows";
 
 function WorkflowCard({ workflow }: { workflow: Workflow }) {
@@ -13,48 +9,6 @@ function WorkflowCard({ workflow }: { workflow: Workflow }) {
         </h4>
       </div>
       <p className="mt-2 text-base text-muted">{workflow.summary}</p>
-      <ul className="mt-6 space-y-2.5">
-        {workflow.agentDoes.map((task) => (
-          <li key={task} className="flex items-start gap-2 text-sm text-brand-900">
-            <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" />
-            {task}
-          </li>
-        ))}
-      </ul>
-      <div className="mt-auto pt-6">
-        <p className="flex gap-2 rounded-2xl bg-brand-50 p-4 text-sm text-brand-900">
-          <ShieldCheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" />
-          <span>
-            <span className="font-semibold">Your physician: </span>
-            {workflow.physicianApproves}
-          </span>
-        </p>
-      </div>
-    </article>
-  );
-}
-
-function NotesCard() {
-  return (
-    <article className="flex flex-col gap-6 rounded-3xl bg-brand-900 p-6 sm:col-span-2 sm:p-8 lg:flex-row lg:items-end lg:justify-between">
-      <div className="max-w-md">
-        <div className="flex flex-wrap items-center gap-3">
-          <h4 className="text-xl font-semibold text-white">
-            {notesForMac.name}
-          </h4>
-          <span className="rounded-full bg-brand-600 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-white uppercase">
-            Free &middot; Available now
-          </span>
-        </div>
-        <p className="mt-2 text-base text-brand-200">{notesForMac.summary}</p>
-        <Link
-          href={notesForMac.href}
-          className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-white underline-offset-4 hover:underline"
-        >
-          Learn more <span aria-hidden="true">&rarr;</span>
-        </Link>
-      </div>
-      <DownloadButton variant="light" />
     </article>
   );
 }
@@ -90,15 +44,11 @@ export function WorkflowsByMoment() {
                 <h3 className="display mt-3 text-3xl">{moment.title}</h3>
               </div>
               <div className="grid gap-4 sm:grid-cols-2 lg:col-span-2">
-                {moment.id === "during" ? (
-                  <NotesCard />
-                ) : (
-                  workflows
-                    .filter((workflow) => workflow.moment === moment.id)
-                    .map((workflow) => (
-                      <WorkflowCard key={workflow.slug} workflow={workflow} />
-                    ))
-                )}
+                {workflows
+                  .filter((workflow) => workflow.moment === moment.id)
+                  .map((workflow) => (
+                    <WorkflowCard key={workflow.slug} workflow={workflow} />
+                  ))}
               </div>
             </div>
           ))}
