@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CtaSection } from "@/components/CtaSection";
-import { FreeToolsGrid } from "@/components/FreeToolsGrid";
+import { NotesDownload } from "@/components/NotesDownload";
 
 export const metadata: Metadata = {
   title: "Free Clinical Tools",
@@ -37,7 +37,7 @@ export default function ToolsPage() {
 
       <section className="px-4 pt-4 pb-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <FreeToolsGrid />
+          <NotesDownload full />
         </div>
       </section>
 

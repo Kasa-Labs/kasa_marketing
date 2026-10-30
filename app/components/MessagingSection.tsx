@@ -1,4 +1,4 @@
-import { LockClosedIcon, PaperClipIcon } from "@heroicons/react/24/outline";
+import { PaperClipIcon } from "@heroicons/react/24/outline";
 
 const thread = [
   {
@@ -25,12 +25,6 @@ function PatientChat() {
       className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-black/30"
       aria-label="Illustrative patient conversation"
     >
-      <div className="flex items-center gap-2 bg-brand-900 px-4 py-2.5">
-        <span className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs text-brand-100">
-          <LockClosedIcon className="h-3 w-3" />
-          patients.kasamd.com
-        </span>
-      </div>
       <div className="flex items-center gap-3 border-b border-brand-900/10 bg-brand-50 px-4 py-3">
         <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-600 text-sm font-semibold text-white">
           K

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { AppleIcon, DOWNLOAD_URL } from "@/components/DownloadButton";
 import { GET_STARTED_HREF } from "@/components/RequestInvite";
 
 const links = [
@@ -46,13 +45,6 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-2">
-            <a
-              href={DOWNLOAD_URL}
-              className="hidden items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-brand-900 transition-colors hover:bg-brand-50 lg:inline-flex"
-            >
-              <AppleIcon className="h-4 w-4" />
-              Download
-            </a>
             <Link
               href={GET_STARTED_HREF}
               className="hidden items-center rounded-full bg-brand-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-950 sm:inline-flex"
@@ -116,13 +108,6 @@ export function Navbar() {
               >
                 Get started
               </Link>
-              <a
-                href={DOWNLOAD_URL}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand-900/15 px-4 py-3 text-base font-semibold text-brand-900"
-              >
-                <AppleIcon className="h-4 w-4" />
-                Download Notes for Mac
-              </a>
             </div>
           </div>
         )}
