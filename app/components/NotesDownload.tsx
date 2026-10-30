@@ -15,10 +15,10 @@ export function NotesDownload({ full = false }: { full?: boolean }) {
         </div>
         <div className="overflow-hidden rounded-xl border border-brand-900/5">
           <Image
-            src="/images/kasamd.jpg"
+            src="/images/notes-app.png"
             alt="Notes for Mac showing a SOAP note generated from a patient visit"
-            width={3016}
-            height={1654}
+            width={2638}
+            height={1486}
             sizes={full ? "(min-width: 1152px) 1152px, 100vw" : "(min-width: 1024px) 576px, 100vw"}
             className="w-full"
           />
