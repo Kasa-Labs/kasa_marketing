@@ -21,7 +21,7 @@ const points = [
     icon: CpuChipIcon,
     title: "Agents, not outsourced staff",
     description:
-      "KasaMD has no back-office staff working in your records. The only people in the loop are your own.",
+      "KasaMD has no staff working in your records. The only people in the loop are your own.",
   },
 ];
 

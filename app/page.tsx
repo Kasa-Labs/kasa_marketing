@@ -43,7 +43,7 @@ export default function Home() {
 
       <CtaSection
         id="get-started"
-        title="Hand the back office to agents."
+        title="Hand off the rest."
         description="KasaMD is invite only. Tell us about your practice and the work you want off your plate."
       >
         <RequestInviteButton variant="light" />

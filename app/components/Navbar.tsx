@@ -7,7 +7,7 @@ import { AppleIcon, DOWNLOAD_URL } from "@/components/DownloadButton";
 import { GET_STARTED_HREF } from "@/components/RequestInvite";
 
 const links = [
-  { href: "/#back-office", label: "Back office" },
+  { href: "/#services", label: "Services" },
   { href: "/tools", label: "Free tools" },
   { href: "/about", label: "About" },
 ];

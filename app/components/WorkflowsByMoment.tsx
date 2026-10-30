@@ -16,12 +16,12 @@ function WorkflowCard({ workflow }: { workflow: Workflow }) {
 export function WorkflowsByMoment() {
   return (
     <section
-      id="back-office"
+      id="services"
       className="scroll-mt-20 px-4 py-24 sm:px-6 sm:py-32 lg:px-8"
     >
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">
-          <span className="eyebrow">The back office</span>
+          <span className="eyebrow">Services</span>
           <h2 className="display mt-6 text-4xl sm:text-5xl">
             The work around the visit, taken on by agents.
           </h2>

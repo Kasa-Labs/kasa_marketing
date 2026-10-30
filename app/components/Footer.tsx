@@ -4,7 +4,7 @@ const columns = [
   {
     title: "Product",
     links: [
-      { href: "/#back-office", label: "Back office" },
+      { href: "/#services", label: "Services" },
       { href: "/tools", label: "Free tools" },
       { href: "/tools/notes", label: "Notes for Mac" },
     ],
@@ -35,8 +35,9 @@ export function Footer() {
           <div className="col-span-3 md:col-span-2">
             <img src="/kasamd_green.png" alt="KasaMD" className="h-8" />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
-              The back office for independent practices, run by agents. Plus
-              free clinical tools, starting with Notes for Mac.
+              Patient messaging, scheduling, refills, prior auth, referrals and
+              billing for independent practices. Plus free clinical tools,
+              starting with Notes for Mac.
             </p>
             <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-brand-900/10 bg-white px-3 py-1 text-xs font-medium text-brand-900">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />

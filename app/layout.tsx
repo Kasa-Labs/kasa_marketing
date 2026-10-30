@@ -8,13 +8,13 @@ import { ReferrerTracker } from "@/components/ReferrerTracker";
 export const metadata: Metadata = {
   metadataBase: new URL("https://kasamd.com"),
   title: {
-    default: "KasaMD - The Back Office for Independent Practices",
+    default: "KasaMD - Practice Medicine. We'll Handle the Rest.",
     template: "%s | KasaMD",
   },
   description:
-    "Agents that run the back office for independent practices: patient messaging, scheduling, refills, prior authorization, referrals and billing, with your physician approving every clinical call. Plus free clinical tools, starting with Notes for Mac.",
+    "Patient messaging, scheduling, refills, prior authorization, referrals and billing for independent practices, with your physician approving every clinical call. Plus free clinical tools, starting with Notes for Mac.",
   keywords: [
-    "independent practice back office",
+    "independent practice services",
     "medical practice automation",
     "AI agents for medical practices",
     "after-hours patient messaging",
@@ -46,15 +46,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://kasamd.com",
     siteName: "KasaMD",
-    title: "KasaMD - The Back Office for Independent Practices",
+    title: "KasaMD - Practice Medicine. We'll Handle the Rest.",
     description:
       "Agents for patient messaging, scheduling, refills, prior authorization, referrals and billing. Your physician approves every clinical call.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "KasaMD - The Back Office for Independent Practices",
+    title: "KasaMD - Practice Medicine. We'll Handle the Rest.",
     description:
-      "Agents run the back office for independent practices. Your physician approves every clinical call.",
+      "Patient messaging, scheduling, refills, prior auth, referrals and billing for independent practices. Your physician approves every clinical call.",
   },
 };
 

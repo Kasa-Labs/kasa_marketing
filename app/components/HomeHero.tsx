@@ -64,8 +64,8 @@ export function HomeHero() {
           Physician-led
         </span>
         <h1 className="display mt-8 text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">
-          The back office for independent practices,{" "}
-          <span className="text-brand-600">run by agents.</span>
+          Practice medicine.{" "}
+          <span className="text-brand-600">We&apos;ll handle the rest.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
           Patients get answers at 11pm, refills and prior auths wait ready to
@@ -91,26 +91,11 @@ export function HomeHero() {
 
       <div className="relative mx-auto mt-16 grid max-w-6xl gap-4 lg:grid-cols-2">
         <Link
-          href="#back-office"
-          className="group flex flex-col justify-between gap-10 rounded-3xl bg-brand-900 p-6 sm:p-8"
+          href="#services"
+          className="group flex flex-col justify-center rounded-3xl bg-brand-900 p-6 sm:p-8"
         >
           <div className="mx-auto w-full max-w-sm">
             <TextThread />
-          </div>
-          <div className="flex items-end justify-between gap-6">
-            <div>
-              <span className="text-xs font-semibold tracking-wide text-brand-200 uppercase">
-                Run by agents
-              </span>
-              <h2 className="mt-2 font-gtsuper text-4xl tracking-tight text-white sm:text-5xl">
-                The back office
-              </h2>
-              <p className="mt-2 text-base text-brand-200">
-                Agents for messaging, scheduling, refills, prior auth,
-                referrals and billing.
-              </p>
-            </div>
-            <ArrowDisc />
           </div>
         </Link>
 
