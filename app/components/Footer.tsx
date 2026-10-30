@@ -39,10 +39,6 @@ export function Footer() {
               billing for independent practices. Plus free clinical tools,
               starting with Notes for Mac.
             </p>
-            <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-brand-900/10 bg-white px-3 py-1 text-xs font-medium text-brand-900">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />
-              Built in the USA and Ghana
-            </p>
           </div>
 
           {columns.map((column) => (
