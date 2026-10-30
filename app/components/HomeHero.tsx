@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RequestInviteButton } from "@/components/RequestInvite";
+import { GET_STARTED_HREF } from "@/components/RequestInvite";
 
 const thread = [
   {
@@ -64,7 +64,7 @@ export function HomeHero() {
       <div className="relative mx-auto max-w-4xl text-center">
         <span className="eyebrow">
           <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />
-          Physician-led &middot; Invite only
+          Physician-led
         </span>
         <h1 className="display mt-8 text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">
           The back office for independent practices,{" "}
@@ -75,7 +75,13 @@ export function HomeHero() {
           sign, and claims get paid. Your physician makes every clinical call.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <RequestInviteButton />
+          <Link
+            href={GET_STARTED_HREF}
+            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-900 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-brand-900/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-950"
+          >
+            Get started
+            <span aria-hidden="true">&rarr;</span>
+          </Link>
           <Link
             href="/tools"
             className="inline-flex items-center gap-1 rounded-2xl px-5 py-4 text-base font-semibold text-brand-900 transition-colors hover:bg-brand-100/60"
@@ -97,7 +103,7 @@ export function HomeHero() {
           <div className="flex items-end justify-between gap-6">
             <div>
               <span className="text-xs font-semibold tracking-wide text-brand-200 uppercase">
-                Invite only
+                Run by agents
               </span>
               <h2 className="mt-2 font-gtsuper text-4xl tracking-tight text-white sm:text-5xl">
                 The back office

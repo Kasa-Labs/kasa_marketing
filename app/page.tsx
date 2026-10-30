@@ -44,6 +44,7 @@ export default function Home() {
       </section>
 
       <CtaSection
+        id="get-started"
         title="Hand the back office to agents."
         description="KasaMD is invite only. Tell us about your practice and the work you want off your plate."
       >

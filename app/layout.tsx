@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "KasaMD",
     title: "KasaMD - The Back Office for Independent Practices",
     description:
-      "Agents for patient messaging, scheduling, refills, prior authorization, referrals and billing. Your physician approves every clinical call. Invite only.",
+      "Agents for patient messaging, scheduling, refills, prior authorization, referrals and billing. Your physician approves every clinical call.",
   },
   twitter: {
     card: "summary_large_image",

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { CheckIcon, ShieldCheckIcon } from "@heroicons/react/20/solid";
 import { DownloadButton } from "@/components/DownloadButton";
-import { InviteOnlyBadge } from "@/components/RequestInvite";
 import { notesForMac } from "@/content/tools";
 import { moments, workflows, type Workflow } from "@/content/workflows";
 
@@ -12,7 +11,6 @@ function WorkflowCard({ workflow }: { workflow: Workflow }) {
         <h4 className="text-xl font-semibold text-brand-900">
           {workflow.name}
         </h4>
-        <InviteOnlyBadge />
       </div>
       <p className="mt-2 text-base text-muted">{workflow.summary}</p>
       <ul className="mt-6 space-y-2.5">
@@ -74,9 +72,8 @@ export function WorkflowsByMoment() {
             The work around the visit, taken on by agents.
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Six agents are in the works, one for each workflow. The back office
-            is invite only, and each invited practice picks the workflows it
-            wants first.
+            Six agents are in the works, one for each workflow. Each practice
+            picks the workflows it wants first.
           </p>
         </div>
 

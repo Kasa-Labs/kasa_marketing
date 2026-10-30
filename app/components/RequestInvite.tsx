@@ -8,6 +8,8 @@ const inviteBody = [
   "",
 ].join("\n");
 
+export const GET_STARTED_HREF = "/#get-started";
+
 export const INVITE_URL = `mailto:hello@kasamd.com?subject=${encodeURIComponent(
   "Invite request",
 )}&body=${encodeURIComponent(inviteBody)}`;
@@ -34,14 +36,5 @@ export function RequestInviteButton({
       Request an invite
       <span aria-hidden="true">&rarr;</span>
     </a>
-  );
-}
-
-export function InviteOnlyBadge() {
-  return (
-    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-brand-900 uppercase">
-      <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />
-      Invite only
-    </span>
   );
 }

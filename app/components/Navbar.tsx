@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { AppleIcon, DOWNLOAD_URL } from "@/components/DownloadButton";
-import { INVITE_URL } from "@/components/RequestInvite";
+import { GET_STARTED_HREF } from "@/components/RequestInvite";
 
 const links = [
   { href: "/#back-office", label: "Back office" },
@@ -53,12 +53,12 @@ export function Navbar() {
               <AppleIcon className="h-4 w-4" />
               Download
             </a>
-            <a
-              href={INVITE_URL}
+            <Link
+              href={GET_STARTED_HREF}
               className="hidden items-center rounded-full bg-brand-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-950 sm:inline-flex"
             >
-              Request an invite
-            </a>
+              Get started
+            </Link>
 
             {/* Mobile menu button */}
             <button
@@ -109,12 +109,13 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={INVITE_URL}
+              <Link
+                href={GET_STARTED_HREF}
                 className="mt-2 inline-flex items-center justify-center rounded-xl bg-brand-900 px-4 py-3 text-base font-semibold text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
-                Request an invite
-              </a>
+                Get started
+              </Link>
               <a
                 href={DOWNLOAD_URL}
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand-900/15 px-4 py-3 text-base font-semibold text-brand-900"
