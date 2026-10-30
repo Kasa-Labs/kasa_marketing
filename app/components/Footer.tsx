@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { INVITE_URL } from "@/components/RequestInvite";
 
 const columns = [
   {
     title: "Product",
     links: [
       { href: "/#back-office", label: "Back office" },
-      { href: INVITE_URL, label: "Request an invite" },
       { href: "/tools", label: "Free tools" },
       { href: "/tools/notes", label: "Notes for Mac" },
     ],
