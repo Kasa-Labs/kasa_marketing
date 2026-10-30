@@ -49,7 +49,7 @@ const principles = [
 ];
 
 const founder = {
-  name: "Dr. Emmanuel Adomfeh",
+  name: "Dr. Emmanuel Adomfeh, MD",
   role: "Founder & CEO",
   photo: "/images/emmanuel.jpg",
 };
@@ -188,7 +188,7 @@ export default function AboutPage() {
               />
             </div>
             <figcaption className="mt-4">
-              <p className="text-base font-semibold text-brand-900">
+              <p className="text-base font-semibold whitespace-nowrap text-brand-900">
                 {founder.name}
               </p>
               <p className="text-sm text-muted">{founder.role}</p>
