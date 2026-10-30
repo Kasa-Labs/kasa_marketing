@@ -1,40 +1,72 @@
 import Link from "next/link";
+import {
+  ChevronLeftIcon,
+  MicrophoneIcon,
+  PhoneIcon,
+  PlusIcon,
+} from "@heroicons/react/24/outline";
 import { GET_STARTED_HREF } from "@/components/RequestInvite";
 
 const thread = [
   {
     from: "patient",
+    time: "11:04 PM",
     text: "My cough is worse tonight and my inhaler is almost empty. Can I get in tomorrow?",
   },
   {
     from: "agent",
+    time: "11:04 PM",
     text: "Sorry you're feeling worse. Are you short of breath right now?",
   },
-  { from: "patient", text: "No, just the cough." },
+  { from: "patient", time: "11:05 PM", text: "No, just the cough." },
   {
     from: "agent",
+    time: "11:05 PM",
     text: "You're booked for 9:20 tomorrow morning, and I've sent a short intake form. Your refill request is with the doctor.",
   },
 ] as const;
 
 function TextThread() {
   return (
-    <div className="flex flex-col gap-2.5" aria-label="Illustrative text conversation">
-      <p className="mb-1 text-center text-[11px] font-medium tracking-wide text-brand-200 uppercase">
-        Text message &middot; 11:04 PM
-      </p>
-      {thread.map((message) => (
-        <p
-          key={message.text}
-          className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-snug ${
-            message.from === "patient"
-              ? "self-end rounded-br-md bg-brand-500 text-white"
-              : "self-start rounded-bl-md bg-white text-brand-900"
-          }`}
-        >
-          {message.text}
-        </p>
-      ))}
+    <div
+      className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-black/30"
+      aria-label="Illustrative text conversation"
+    >
+      <div className="flex items-center gap-3 border-b border-brand-900/10 bg-brand-50 px-4 py-3">
+        <ChevronLeftIcon className="h-5 w-5 text-brand-900" />
+        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-600 text-sm font-semibold text-white">
+          K
+        </span>
+        <div className="flex-1">
+          <p className="text-sm font-semibold text-brand-900">KasaMD Agent</p>
+          <p className="text-xs text-muted">online</p>
+        </div>
+        <PhoneIcon className="h-5 w-5 text-brand-900" />
+      </div>
+      <div className="flex flex-col gap-2 bg-[#f1efe9] px-3 py-4">
+        {thread.map((message) => (
+          <div
+            key={message.text}
+            className={`max-w-[85%] rounded-2xl px-3 pt-2 pb-1.5 text-sm leading-snug text-brand-900 shadow-sm ${
+              message.from === "patient"
+                ? "self-end rounded-br-md bg-[#d9fdd3]"
+                : "self-start rounded-bl-md bg-white"
+            }`}
+          >
+            <p>{message.text}</p>
+            <p className="mt-0.5 text-right text-[10px] text-muted">
+              {message.time}
+            </p>
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center gap-2 bg-brand-50 px-3 py-2.5">
+        <PlusIcon className="h-5 w-5 text-brand-900" />
+        <span className="flex-1 rounded-full bg-white px-4 py-2 text-sm text-muted">
+          Message
+        </span>
+        <MicrophoneIcon className="h-5 w-5 text-brand-900" />
+      </div>
     </div>
   );
 }
@@ -89,7 +121,7 @@ export function HomeHero() {
         </div>
       </div>
 
-      <div className="relative mx-auto mt-16 grid max-w-6xl gap-4">
+      <div className="relative mx-auto mt-16 grid max-w-2xl gap-4">
         <Link
           href="#services"
           className="group flex flex-col justify-center rounded-3xl bg-brand-900 p-6 sm:p-8"
