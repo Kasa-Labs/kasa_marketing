@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     description:
       "Transcribe patient visits and generate SOAP, HPI or custom notes on your Mac. Works offline. Free, no account needed.",
     url: "https://kasamd.com/tools/notes",
+    type: "website",
+    siteName: "KasaMD",
   },
 };
 
@@ -255,7 +257,7 @@ export default function NotesPage() {
         </div>
       </section>
 
-      <CtaSection />
+      <CtaSection description="Download Notes for Mac and turn your next patient visit into a finished note, without an internet connection." />
     </>
   );
 }

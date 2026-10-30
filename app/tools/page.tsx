@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     description:
       "Free clinical tools from KasaMD, starting with Notes for Mac. No account needed.",
     url: "https://kasamd.com/tools",
+    type: "website",
+    siteName: "KasaMD",
   },
 };
 
