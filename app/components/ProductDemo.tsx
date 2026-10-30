@@ -14,15 +14,15 @@ export function ProductDemo() {
             <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
             <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
             <span className="ml-3 hidden text-xs text-muted sm:inline">
-              KasaMD &mdash; Follow-up Type 2 Diabetes
+              KasaMD &mdash; Asthma Exacerbation
             </span>
           </div>
           <div className="overflow-hidden rounded-xl border border-brand-900/5 sm:rounded-2xl">
             <Image
-              src="/images/kasamd.jpg"
-              alt="KasaMD application interface showing a SOAP note generated from a patient visit, with a medication reference panel"
-              width={3016}
-              height={1654}
+              src="/images/notes-app.png"
+              alt="Notes for Mac showing a SOAP note generated from a patient visit"
+              width={2638}
+              height={1486}
               sizes="(min-width: 1152px) 1152px, 100vw"
               className="w-full"
               priority
