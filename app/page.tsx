@@ -3,6 +3,7 @@ import { AgentSteps } from "@/components/AgentSteps";
 import { CtaSection } from "@/components/CtaSection";
 import { FreeToolsGrid } from "@/components/FreeToolsGrid";
 import { HomeHero } from "@/components/HomeHero";
+import { MessagingSection } from "@/components/MessagingSection";
 import { RequestInviteButton } from "@/components/RequestInvite";
 import { TrustSection } from "@/components/TrustSection";
 import { WorkflowsByMoment } from "@/components/WorkflowsByMoment";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <HomeHero />
+      <MessagingSection />
       <WorkflowsByMoment />
       <AgentSteps />
       <TrustSection />
