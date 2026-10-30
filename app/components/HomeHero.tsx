@@ -63,9 +63,9 @@ export function HomeHero() {
           <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />
           Physician-led
         </span>
-        <h1 className="display mt-8 text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">
-          Practice medicine.{" "}
-          <span className="text-brand-600">We&apos;ll handle the rest.</span>
+        <h1 className="display mt-8 text-[2.5rem] leading-[1.05] sm:text-6xl lg:text-7xl">
+          Practice medicine.
+          <span className="block text-brand-600">We&apos;ll handle the rest.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
           Patients get answers at 11pm, refills and prior auths wait ready to
