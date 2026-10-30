@@ -35,9 +35,6 @@ function TextThread() {
           {message.text}
         </p>
       ))}
-      <p className="mt-1 text-[11px] text-brand-200">
-        Illustrative conversation with a KasaMD agent
-      </p>
     </div>
   );
 }
