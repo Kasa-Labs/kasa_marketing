@@ -4,10 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { AppleIcon, DOWNLOAD_URL } from "@/components/DownloadButton";
+import { GET_STARTED_HREF } from "@/components/RequestInvite";
 
 const links = [
-  { href: "/features", label: "Features" },
-  { href: "/features#pricing", label: "Pricing" },
+  { href: "/#services", label: "Services" },
+  { href: "/tools", label: "Free tools" },
   { href: "/about", label: "About" },
 ];
 
@@ -47,11 +48,17 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href={DOWNLOAD_URL}
-              className="hidden items-center gap-2 rounded-full bg-brand-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-950 sm:inline-flex"
+              className="hidden items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-brand-900 transition-colors hover:bg-brand-50 lg:inline-flex"
             >
               <AppleIcon className="h-4 w-4" />
               Download
             </a>
+            <Link
+              href={GET_STARTED_HREF}
+              className="hidden items-center rounded-full bg-brand-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-950 sm:inline-flex"
+            >
+              Get started
+            </Link>
 
             {/* Mobile menu button */}
             <button
@@ -102,12 +109,19 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href={GET_STARTED_HREF}
+                className="mt-2 inline-flex items-center justify-center rounded-xl bg-brand-900 px-4 py-3 text-base font-semibold text-white"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Get started
+              </Link>
               <a
                 href={DOWNLOAD_URL}
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-brand-900 px-4 py-3 text-base font-semibold text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand-900/15 px-4 py-3 text-base font-semibold text-brand-900"
               >
                 <AppleIcon className="h-4 w-4" />
-                Download for Mac
+                Download Notes for Mac
               </a>
             </div>
           </div>

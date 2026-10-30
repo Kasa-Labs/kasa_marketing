@@ -12,7 +12,7 @@ const highlights = [
   { icon: CheckCircleIcon, label: "Free, no account needed" },
 ];
 
-export function Hero() {
+export function NotesHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white px-4 pt-20 pb-16 sm:px-6 sm:pt-28 lg:px-8">
       {/* Background grid + glow */}
@@ -22,7 +22,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl text-center">
         <span className="eyebrow">
           <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />
-          Physician-led &middot; Made for Mac
+          Free clinical tool &middot; Made for Mac
         </span>
 
         {/* Main Headline */}
@@ -33,18 +33,18 @@ export function Hero() {
 
         {/* Subheadline */}
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
-          Transcribe patient visits and generate clinical notes right from your
-          Mac. No internet needed.
+          Notes for Mac transcribes patient visits and generates clinical notes
+          right on your Mac. No internet needed.
         </p>
 
         {/* Download CTA */}
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <DownloadButton />
           <Link
-            href="/features"
+            href="#capabilities"
             className="inline-flex items-center gap-1 rounded-2xl px-5 py-4 text-base font-semibold text-brand-900 transition-colors hover:bg-brand-100/60"
           >
-            Explore features
+            See what it does
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>

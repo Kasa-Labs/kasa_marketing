@@ -1,16 +1,18 @@
 import { DownloadButton } from "@/components/DownloadButton";
 
 export function CtaSection({
+  id,
   title = "Spend less time charting.",
   description = "Download KasaMD and turn your next patient visit into a finished note, without an internet connection.",
   children,
 }: {
+  id?: string;
   title?: string;
   description?: string;
   children?: React.ReactNode;
 }) {
   return (
-    <section className="px-4 pb-20 sm:px-6 lg:px-8">
+    <section id={id} className="scroll-mt-20 px-4 pb-20 sm:px-6 lg:px-8">
       <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl bg-brand-900 px-6 py-16 text-center sm:px-12 sm:py-20">
         {/* Soft brand glow */}
         <div className="pointer-events-none absolute -top-40 left-1/2 h-80 w-[40rem] -translate-x-1/2 rounded-full bg-brand-600/30 blur-3xl" />
