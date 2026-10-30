@@ -7,9 +7,9 @@ import {
 const steps = [
   {
     icon: LinkIcon,
-    title: "Connect your systems",
+    title: "We connect to your systems",
     description:
-      "Give the agents access to the EHR, phone line, fax and payer portals your practice already uses.",
+      "KasaMD connects the agents to the EHR, phone line, fax and payer portals your practice already uses.",
   },
   {
     icon: SparklesIcon,
