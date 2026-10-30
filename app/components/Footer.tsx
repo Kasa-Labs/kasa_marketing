@@ -1,12 +1,14 @@
 import Link from "next/link";
+import { INVITE_URL } from "@/components/RequestInvite";
 
 const columns = [
   {
     title: "Product",
     links: [
-      { href: "/features", label: "Features" },
-      { href: "/features#pricing", label: "Pricing" },
-      { href: "/features#faq", label: "FAQ" },
+      { href: "/#back-office", label: "Back office" },
+      { href: INVITE_URL, label: "Request an invite" },
+      { href: "/tools", label: "Free tools" },
+      { href: "/tools/notes", label: "Notes for Mac" },
     ],
   },
   {
@@ -35,8 +37,8 @@ export function Footer() {
           <div className="col-span-3 md:col-span-2">
             <img src="/kasamd_green.png" alt="KasaMD" className="h-8" />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
-              Offline clinical transcription for healthcare providers. Patient
-              audio and notes never leave your Mac.
+              The back office for independent practices, run by agents. Plus
+              free clinical tools, starting with Notes for Mac.
             </p>
             <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-brand-900/10 bg-white px-3 py-1 text-xs font-medium text-brand-900">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />

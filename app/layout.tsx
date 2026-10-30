@@ -8,18 +8,22 @@ import { ReferrerTracker } from "@/components/ReferrerTracker";
 export const metadata: Metadata = {
   metadataBase: new URL("https://kasamd.com"),
   title: {
-    default: "KasaMD - Offline Clinical Transcription for Mac",
+    default: "KasaMD - The Back Office for Independent Practices",
     template: "%s | KasaMD",
   },
   description:
-    "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes. No internet required.",
+    "Agents that run the back office for independent practices: patient messaging, scheduling, refills, prior authorization, referrals and billing, with your physician approving every clinical call. Plus free clinical tools, starting with Notes for Mac.",
   keywords: [
+    "independent practice back office",
+    "medical practice automation",
+    "AI agents for medical practices",
+    "after-hours patient messaging",
+    "prior authorization automation",
+    "prescription refill management",
+    "medical billing",
+    "free clinical tools",
     "offline clinical transcription",
-    "offline medical documentation",
-    "clinical notes",
-    "medical transcription Mac",
-    "offline medical tool",
-    "HIPAA-friendly transcription",
+    "clinical notes for Mac",
   ],
   authors: [{ name: "KasaMD" }],
   icons: {
@@ -42,15 +46,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://kasamd.com",
     siteName: "KasaMD",
-    title: "KasaMD - Offline Clinical Transcription for Mac",
+    title: "KasaMD - The Back Office for Independent Practices",
     description:
-      "Offline clinical transcription for your Mac. Transcribe patient visits and generate clinical notes. No internet required.",
+      "Agents for patient messaging, scheduling, refills, prior authorization, referrals and billing. Your physician approves every clinical call. Invite only.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "KasaMD - Offline Clinical Transcription for Mac",
+    title: "KasaMD - The Back Office for Independent Practices",
     description:
-      "Offline clinical transcription for your Mac. No internet required.",
+      "Agents run the back office for independent practices. Your physician approves every clinical call.",
   },
 };
 
