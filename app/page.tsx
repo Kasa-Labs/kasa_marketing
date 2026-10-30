@@ -1,6 +1,6 @@
-import { Hero } from "@/components/Hero";
+import { NotesHero as Hero } from "@/components/NotesHero";
 import { ProductDemo } from "@/components/ProductDemo";
-import { HowItWorks } from "@/components/HowItWorks";
+import { NotesHowItWorks as HowItWorks } from "@/components/NotesHowItWorks";
 import { FeaturesOverview } from "@/components/FeaturesOverview";
 import { PrivacySection } from "@/components/PrivacySection";
 import { CtaSection } from "@/components/CtaSection";
