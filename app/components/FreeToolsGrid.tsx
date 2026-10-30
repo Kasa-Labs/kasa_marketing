@@ -46,12 +46,6 @@ export function FreeToolsGrid() {
       {tools.map((tool) => (
         <ToolCard key={tool.slug} tool={tool} />
       ))}
-      <div className="flex flex-col justify-center rounded-3xl border border-dashed border-brand-300 p-8 text-center">
-        <p className="display text-2xl">More tools on the way</p>
-        <p className="mt-2 text-sm text-muted">
-          Free, and no account needed, like Notes for Mac.
-        </p>
-      </div>
     </div>
   );
 }
